@@ -1,0 +1,4 @@
+verilog work "vgac.v"
+verilog work "ipcore_dir/Dinosaur.v"
+verilog work "clkdiv.v"
+verilog work "Top.v"

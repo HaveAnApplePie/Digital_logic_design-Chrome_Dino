@@ -1,0 +1,28 @@
+Command line:
+   vgac_sim_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  14190
+
+Wed Dec 25 17:46:03 2019
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5168.42 Meg
+
+ Total Signals          : 29
+ Total Nets             : 84
+ Total Signal Drivers   : 21
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 27
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 232
+
+ Total Simulation Time: 0.328125 sec
+
+ Current Memory Usage: 5011.13 Meg
+
+Wed Dec 25 17:47:28 2019
+

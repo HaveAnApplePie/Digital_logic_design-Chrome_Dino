@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/ZJU/2019aut-win/LCDF/Dinosaur/vgac_sim_isim_beh.exe" -prj "F:/ZJU/2019aut-win/LCDF/Dinosaur/vgac_sim_beh.prj" "work.vgac_sim" "work.glbl" 

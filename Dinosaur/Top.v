@@ -59,6 +59,8 @@ module Top(
 	initial isJump <= 1'b0;
 	initial jumpTime <= 8'd64;
 	always@(posedge clk)begin
+	
+	
 		wasReady <= keyReady;
 		if(!wasReady&&keyReady)begin
 			case(keyCode)
@@ -70,6 +72,8 @@ module Top(
 				default:;
 			endcase
 		end
+		
+		
 		if(col_addr >= Dino0_X && col_addr <= Dino0_X +127 && row_addr >= Dino0_Y && row_addr <= Dino0_Y + 127)begin
 			Dino0 <= (col_addr-Dino0_X)*128 + (row_addr-Dino0_Y);
 			vga_data <= spob[11:0];
@@ -77,27 +81,45 @@ module Top(
 		else begin
 			vga_data <= 12'hfff;
 		end
-		if(clk_div[19] && isJump && jumpTime < 8'd32)begin
+		
+		
+		if(clk_div[19] && isJump && jumpTime < 8'd10)begin
+			Dino0_Y <= Dino0_Y - 10'd8;
+			jumpTime <= jumpTime + 8'd1;
+			isJump <=0;
+		end
+		if(clk_div[19] && isJump && jumpTime >= 8'd10 && jumpTime < 8'd20)begin
 			Dino0_Y <= Dino0_Y - 10'd4;
+			jumpTime <= jumpTime + 8'd1;
+			isJump <=0;
+		end
+		if(clk_div[19] && isJump && jumpTime >= 8'd20 && jumpTime < 8'd32)begin
+			Dino0_Y <= Dino0_Y - 10'd2;
 			jumpTime <= jumpTime + 8'd1;
 			isJump <=0;
 		end
 		else if(!clk_div[19] && !isJump) begin
 			isJump <= 1;
 		end
-		
-		if(clk_div[19] && isJump && jumpTime >= 8'd32 && jumpTime < 8'd64)begin
+		if(clk_div[19] && isJump && jumpTime >= 8'd32 && jumpTime < 8'd44)begin
+			Dino0_Y <= Dino0_Y + 10'd2;
+			jumpTime <= jumpTime + 8'd1;
+			isJump <= 0;
+		end
+		if(clk_div[19] && isJump && jumpTime >= 8'd44 && jumpTime < 8'd54)begin
 			Dino0_Y <= Dino0_Y + 10'd4;
 			jumpTime <= jumpTime + 8'd1;
 			isJump <= 0;
 		end
+		if(clk_div[19] && isJump && jumpTime >= 8'd54 && jumpTime < 8'd64)begin
+			Dino0_Y <= Dino0_Y + 10'd8;
+			jumpTime <= jumpTime + 8'd1;
+			isJump <=0;
+		end
+		
+		
 	end
-
-//.k	always@(posedge clk_div[15])begin
-//		if(isJump && jumpTime <= 8'd32)begin
-//			Dino0_X <= Dino0_X + 10'd2;
-//			jumpTime <= jumpTime + 8'd1;
-//		end
-//	end
-
+	
+	
+	
 endmodule

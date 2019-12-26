@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: Top.prj
@@ -140,9 +140,13 @@ Elaborating module <vgac>.
 
 Elaborating module <Dinosaur>.
 WARNING:HDLCompiler:1499 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\ipcore_dir\Dinosaur.v" Line 39: Empty module <Dinosaur> remains a black box.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 74: Result of 32-bit expression is truncated to fit in 19-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 81: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 90: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 78: Result of 32-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 87: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 92: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 97: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 105: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 110: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 115: Result of 10-bit expression is truncated to fit in 9-bit target.
 WARNING:HDLCompiler:552 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 54: Input port wea[0] is not connected on this instance
 WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 36. All outputs of instance <a0<1>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
 WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 36. All outputs of instance <a0<2>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
@@ -191,29 +195,37 @@ INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 45: Output port <r
     Found 19-bit register for signal <Dino0>.
     Found 12-bit register for signal <vga_data>.
     Found 1-bit register for signal <wasReady>.
-    Found 10-bit subtractor for signal <Dino0_X[9]_GND_1_o_sub_4_OUT> created at line 66.
-    Found 9-bit subtractor for signal <Dino0_Y[8]_GND_1_o_sub_6_OUT> created at line 68.
-    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_27_OUT> created at line 74.
-    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_28_OUT> created at line 74.
-    Found 10-bit adder for signal <Dino0_X[9]_GND_1_o_add_4_OUT> created at line 67.
-    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_6_OUT> created at line 69.
-    Found 11-bit adder for signal <n0115> created at line 73.
-    Found 10-bit adder for signal <n0117> created at line 73.
-    Found 32-bit adder for signal <n0102> created at line 74.
-    Found 8-bit adder for signal <jumpTime[7]_GND_1_o_add_33_OUT> created at line 82.
-    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_38_OUT> created at line 90.
-    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_33_OUT<8:0>> created at line 81.
-    Found 8-bit comparator greater for signal <n0002> created at line 65
-    Found 10-bit comparator lessequal for signal <n0025> created at line 73
-    Found 11-bit comparator lessequal for signal <n0028> created at line 73
-    Found 9-bit comparator lessequal for signal <n0031> created at line 73
-    Found 10-bit comparator lessequal for signal <n0035> created at line 73
-    Found 8-bit comparator greater for signal <n0044> created at line 80
+    Found 10-bit subtractor for signal <Dino0_X[9]_GND_1_o_sub_4_OUT> created at line 68.
+    Found 9-bit subtractor for signal <Dino0_Y[8]_GND_1_o_sub_6_OUT> created at line 70.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_27_OUT> created at line 78.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_28_OUT> created at line 78.
+    Found 10-bit adder for signal <Dino0_X[9]_GND_1_o_add_4_OUT> created at line 69.
+    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_6_OUT> created at line 71.
+    Found 11-bit adder for signal <n0163> created at line 77.
+    Found 10-bit adder for signal <n0165> created at line 77.
+    Found 32-bit adder for signal <n0138> created at line 78.
+    Found 8-bit adder for signal <jumpTime[7]_GND_1_o_add_33_OUT> created at line 88.
+    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_50_OUT> created at line 105.
+    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_56_OUT> created at line 110.
+    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_62_OUT> created at line 115.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_33_OUT<8:0>> created at line 87.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_39_OUT<8:0>> created at line 92.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_45_OUT<8:0>> created at line 97.
+    Found 8-bit comparator greater for signal <n0002> created at line 67
+    Found 10-bit comparator lessequal for signal <n0025> created at line 77
+    Found 11-bit comparator lessequal for signal <n0028> created at line 77
+    Found 9-bit comparator lessequal for signal <n0031> created at line 77
+    Found 10-bit comparator lessequal for signal <n0035> created at line 77
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_32_o> created at line 86
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_38_o> created at line 91
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_44_o> created at line 96
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_50_o> created at line 104
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_56_o> created at line 109
     Summary:
 	inferred  11 Adder/Subtractor(s).
 	inferred  60 D-type flip-flop(s).
-	inferred   6 Comparator(s).
-	inferred   6 Multiplexer(s).
+	inferred  10 Comparator(s).
+	inferred  24 Multiplexer(s).
 Unit <Top> synthesized.
 
 Synthesizing Unit <clkdiv>.
@@ -310,16 +322,17 @@ Macro Statistics
  5-bit register                                        : 1
  8-bit register                                        : 1
  9-bit register                                        : 2
-# Comparators                                          : 12
+# Comparators                                          : 16
  10-bit comparator greater                             : 6
  10-bit comparator lessequal                           : 2
  11-bit comparator lessequal                           : 1
- 8-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 6
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 7
+# Multiplexers                                         : 25
+ 1-bit 2-to-1 multiplexer                              : 6
  10-bit 2-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 2
- 9-bit 2-to-1 multiplexer                              : 4
+ 8-bit 2-to-1 multiplexer                              : 6
+ 9-bit 2-to-1 multiplexer                              : 12
 # Tristates                                            : 9
  1-bit tristate buffer                                 : 9
 
@@ -366,15 +379,16 @@ Macro Statistics
  4-bit updown counter                                  : 2
 # Registers                                            : 106
  Flip-Flops                                            : 106
-# Comparators                                          : 12
+# Comparators                                          : 16
  10-bit comparator greater                             : 6
  10-bit comparator lessequal                           : 2
  11-bit comparator lessequal                           : 1
- 8-bit comparator greater                              : 2
+ 8-bit comparator greater                              : 6
  9-bit comparator lessequal                            : 1
-# Multiplexers                                         : 6
- 8-bit 2-to-1 multiplexer                              : 2
- 9-bit 2-to-1 multiplexer                              : 4
+# Multiplexers                                         : 24
+ 1-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 6
+ 9-bit 2-to-1 multiplexer                              : 12
 
 =========================================================================
 
@@ -397,14 +411,9 @@ WARNING:Xst:2677 - Node <clk0/clkdiv_30> of sequential type is unconnected in bl
 WARNING:Xst:2677 - Node <clk0/clkdiv_31> of sequential type is unconnected in block <Top>.
 
 Optimizing unit <Top> ...
-WARNING:Xst:1293 - FF/Latch <jumpTime_7> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <Dino0_Y_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Dino0_Y_1> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <jumpTime_7> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <vgac> ...
 WARNING:Xst:1293 - FF/Latch <Dino0_Y_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Dino0_Y_1> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <jumpTime_7> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dino0_14> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Dino0_15> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
@@ -422,8 +431,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 144
- Flip-Flops                                            : 144
+# Registers                                            : 145
+ Flip-Flops                                            : 145
 
 =========================================================================
 
@@ -446,23 +455,23 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 776
+# BELS                             : 801
 #      GND                         : 2
-#      INV                         : 14
+#      INV                         : 13
 #      LUT1                        : 28
-#      LUT2                        : 40
-#      LUT3                        : 45
-#      LUT4                        : 56
-#      LUT5                        : 146
-#      LUT6                        : 287
-#      MUXCY                       : 78
-#      MUXF7                       : 14
+#      LUT2                        : 37
+#      LUT3                        : 48
+#      LUT4                        : 62
+#      LUT5                        : 149
+#      LUT6                        : 290
+#      MUXCY                       : 86
+#      MUXF7                       : 12
 #      VCC                         : 2
-#      XORCY                       : 64
-# FlipFlops/Latches                : 151
+#      XORCY                       : 72
+# FlipFlops/Latches                : 152
 #      FD                          : 55
 #      FDCE                        : 10
-#      FDE                         : 53
+#      FDE                         : 54
 #      FDR                         : 26
 #      FDRE                        : 7
 # RAMS                             : 104
@@ -483,15 +492,15 @@ Selected Device : 7k160tfbg676-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             151  out of  202800     0%  
- Number of Slice LUTs:                  616  out of  101400     0%  
-    Number used as Logic:               616  out of  101400     0%  
+ Number of Slice Registers:             152  out of  202800     0%  
+ Number of Slice LUTs:                  627  out of  101400     0%  
+    Number used as Logic:               627  out of  101400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    638
-   Number with an unused Flip Flop:     487  out of    638    76%  
-   Number with an unused LUT:            22  out of    638     3%  
-   Number of fully used LUT-FF pairs:   129  out of    638    20%  
+ Number of LUT Flip Flop pairs used:    649
+   Number with an unused Flip Flop:     497  out of    649    76%  
+   Number with an unused LUT:            22  out of    649     3%  
+   Number of fully used LUT-FF pairs:   130  out of    649    20%  
    Number of unique control sets:        19
 
 IO Utilization: 
@@ -524,7 +533,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 70    |
+clk                                | BUFGP                  | 71    |
 clk0/clkdiv_15                     | BUFG                   | 20    |
 clk0/clkdiv_1                      | BUFG                   | 165   |
 -----------------------------------+------------------------+-------+
@@ -534,7 +543,7 @@ Asynchronous Control Signals Information:
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 Control Signal                                                                                                                                                                                                                                                             | Buffer(FF name)                                                                                                                                | Load  |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(Dino/XST_GND:G)                                                                                                                                                      | NONE(Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[29].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 182   |
+Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(Dino/XST_GND:G)                                                                                                                                                      | NONE(Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[75].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 182   |
 Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
 Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T) | 1     |
 Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/cascadelata_tmp(Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
@@ -565,7 +574,7 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 3.774ns (Maximum Frequency: 264.971MHz)
+   Minimum period: 4.187ns (Maximum Frequency: 238.834MHz)
    Minimum input arrival time before clock: 1.535ns
    Maximum output required time after clock: 1.266ns
    Maximum combinational path delay: No path found
@@ -576,10 +585,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.774ns (frequency: 264.971MHz)
-  Total number of paths / destination ports: 6959 / 113
+  Clock period: 4.187ns (frequency: 238.834MHz)
+  Total number of paths / destination ports: 12949 / 115
 -------------------------------------------------------------------------
-Delay:               3.774ns (Levels of Logic = 6)
+Delay:               4.187ns (Levels of Logic = 8)
   Source:            jumpTime_3 (FF)
   Destination:       Dino0_Y_8 (FF)
   Source Clock:      clk rising
@@ -589,24 +598,26 @@ Delay:               3.774ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             4   0.282   0.505  jumpTime_3 (jumpTime_3)
-     LUT2:I0->O            1   0.053   0.413  n00441_SW0 (N15)
-     LUT6:I5->O           14   0.053   0.498  n00441 (n0044)
-     LUT4:I3->O            3   0.053   0.616  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_40_OUT_rs_cy<1>11 (Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_40_OUT_rs_cy<1>)
-     LUT6:I3->O            2   0.053   0.491  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_40_OUT_rs_cy<4>1_SW0 (N25)
-     LUT6:I4->O            3   0.053   0.413  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_40_OUT_rs_cy<4>1 (Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_40_OUT_rs_cy<4>)
-     MUXF7:S->O            1   0.280   0.000  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_40_OUT_rs_xor<8>11 (Dino0_Y[8]_Dino0_Y[8]_mux_40_OUT<8>)
+     FDRE:C->Q             9   0.282   0.778  jumpTime_3 (jumpTime_3)
+     LUT5:I0->O            2   0.053   0.419  jumpTime[7]_GND_1_o_LessThan_56_o11 (jumpTime[7]_GND_1_o_LessThan_56_o11)
+     LUT4:I3->O            8   0.053   0.785  clk_div[19]_jumpTime[7]_AND_35_o1 (clk_div[19]_jumpTime[7]_AND_35_o)
+     LUT6:I0->O            1   0.053   0.413  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_A1011_1 (Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_A1011)
+     LUT6:I5->O            2   0.053   0.608  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_A143 (Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_A142)
+     LUT6:I3->O            1   0.053   0.000  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_rs_lut<6> (Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_rs_lut<6>)
+     MUXCY:S->O            1   0.291   0.000  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_rs_cy<6> (Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_rs_cy<6>)
+     MUXCY:CI->O           0   0.015   0.000  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_rs_cy<7> (Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_rs_cy<7>)
+     XORCY:CI->O           1   0.320   0.000  Mmux_Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT_rs_xor<8> (Dino0_Y[8]_Dino0_Y[8]_mux_64_OUT<8>)
      FDE:D                     0.011          Dino0_Y_8
     ----------------------------------------
-    Total                      3.774ns (0.838ns logic, 2.936ns route)
-                                       (22.2% logic, 77.8% route)
+    Total                      4.187ns (1.184ns logic, 3.003ns route)
+                                       (28.3% logic, 71.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk0/clkdiv_15'
-  Clock period: 2.686ns (frequency: 372.301MHz)
+  Clock period: 3.324ns (frequency: 300.842MHz)
   Total number of paths / destination ports: 161 / 30
 -------------------------------------------------------------------------
-Delay:               2.686ns (Levels of Logic = 3)
+Delay:               3.324ns (Levels of Logic = 3)
   Source:            k0/keyLineX_3 (FF)
   Destination:       k0/rdyFilter/O (FF)
   Source Clock:      clk0/clkdiv_15 rising
@@ -617,45 +628,37 @@ Delay:               2.686ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              5   0.282   0.662  k0/keyLineX_3 (k0/keyLineX_3)
-     LUT4:I0->O            1   0.053   0.413  k0/ready_raw_SW0 (N17)
-     LUT6:I5->O            6   0.053   0.446  k0/ready_raw (k0/ready_raw)
-     LUT5:I4->O            1   0.053   0.399  k0/rdyFilter/_n00231 (k0/rdyFilter/_n0023)
+     LUT4:I0->O            1   0.053   0.739  k0/ready_raw_SW0 (N17)
+     LUT6:I0->O            6   0.053   0.758  k0/ready_raw (k0/ready_raw)
+     LUT5:I0->O            1   0.053   0.399  k0/rdyFilter/_n00231 (k0/rdyFilter/_n0023)
      FDR:R                     0.325          k0/rdyFilter/O
     ----------------------------------------
-    Total                      2.686ns (0.766ns logic, 1.920ns route)
-                                       (28.5% logic, 71.5% route)
+    Total                      3.324ns (0.766ns logic, 2.558ns route)
+                                       (23.0% logic, 77.0% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk0/clkdiv_1'
-  Clock period: 3.013ns (frequency: 331.895MHz)
+  Clock period: 3.193ns (frequency: 313.185MHz)
   Total number of paths / destination ports: 1135 / 74
 -------------------------------------------------------------------------
-Delay:               3.013ns (Levels of Logic = 11)
-  Source:            vga/v_count_5 (FF)
-  Destination:       vga/v_count_9 (FF)
+Delay:               3.193ns (Levels of Logic = 3)
+  Source:            vga/h_count_2 (FF)
+  Destination:       vga/rdn (FF)
   Source Clock:      clk0/clkdiv_1 rising
   Destination Clock: clk0/clkdiv_1 rising
 
-  Data Path: vga/v_count_5 to vga/v_count_9
+  Data Path: vga/h_count_2 to vga/rdn
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             9   0.282   0.778  vga/v_count_5 (vga/v_count_5)
-     LUT5:I0->O            3   0.053   0.427  vga/v_count[9]_PWR_6_o_equal_8_o<9>_SW0 (N31)
-     LUT6:I5->O            9   0.053   0.655  vga/v_count[9]_PWR_6_o_equal_8_o<9> (vga/v_count[9]_PWR_6_o_equal_8_o)
-     LUT3:I0->O            1   0.053   0.000  vga/Mcount_v_count_lut<2> (vga/Mcount_v_count_lut<2>)
-     MUXCY:S->O            1   0.291   0.000  vga/Mcount_v_count_cy<2> (vga/Mcount_v_count_cy<2>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<3> (vga/Mcount_v_count_cy<3>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<4> (vga/Mcount_v_count_cy<4>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<5> (vga/Mcount_v_count_cy<5>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<6> (vga/Mcount_v_count_cy<6>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<7> (vga/Mcount_v_count_cy<7>)
-     MUXCY:CI->O           0   0.015   0.000  vga/Mcount_v_count_cy<8> (vga/Mcount_v_count_cy<8>)
-     XORCY:CI->O           1   0.320   0.000  vga/Mcount_v_count_xor<9> (vga/Mcount_v_count9)
-     FDCE:D                    0.011          vga/v_count_9
+     FDR:C->Q              6   0.282   0.668  vga/h_count_2 (vga/h_count_2)
+     LUT4:I0->O            5   0.053   0.629  vga/read11 (vga/read1)
+     LUT4:I1->O            2   0.053   0.731  vga/Msub_col_xor<6>111 (vga/Msub_col_xor<6>11)
+     LUT6:I1->O            1   0.053   0.399  vga/read3 (vga/read)
+     FDR:R                     0.325          vga/rdn
     ----------------------------------------
-    Total                      3.013ns (1.153ns logic, 1.860ns route)
-                                       (38.3% logic, 61.7% route)
+    Total                      3.193ns (0.766ns logic, 2.427ns route)
+                                       (24.0% logic, 76.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk0/clkdiv_15'
@@ -726,9 +729,9 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.774|         |         |         |
+clk            |    4.187|         |         |         |
 clk0/clkdiv_1  |    3.636|         |         |         |
-clk0/clkdiv_15 |    5.385|         |         |         |
+clk0/clkdiv_15 |    5.025|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk0/clkdiv_1
@@ -737,7 +740,7 @@ Clock to Setup on destination clock clk0/clkdiv_1
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
 clk            |    1.329|         |         |         |
-clk0/clkdiv_1  |    3.013|         |         |         |
+clk0/clkdiv_1  |    3.193|         |         |         |
 clk0/clkdiv_15 |    1.617|         |         |         |
 ---------------+---------+---------+---------+---------+
 
@@ -746,20 +749,20 @@ Clock to Setup on destination clock clk0/clkdiv_15
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk0/clkdiv_15 |    2.686|         |         |         |
+clk0/clkdiv_15 |    3.324|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 21.00 secs
-Total CPU time to Xst completion: 20.65 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.66 secs
  
 --> 
 
-Total memory usage is 4644612 kilobytes
+Total memory usage is 4644708 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   50 (   0 filtered)
+Number of warnings :   49 (   0 filtered)
 Number of infos    :   18 (   0 filtered)
 

@@ -10,23 +10,23 @@ Target Device  : xc7k160t
 Target Package : fbg676
 Target Speed   : -1
 Mapper Version : kintex7 -- $Revision: 1.55 $
-Mapped Date    : Wed Dec 25 18:55:13 2019
+Mapped Date    : Thu Dec 26 18:34:45 2019
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    4
 Slice Logic Utilization:
-  Number of Slice Registers:                    86 out of 202,800    1%
-    Number used as Flip Flops:                  86
+  Number of Slice Registers:                   146 out of 202,800    1%
+    Number used as Flip Flops:                 146
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        108 out of 101,400    1%
-    Number used as logic:                      106 out of 101,400    1%
-      Number using O6 output only:              76
-      Number using O5 output only:              11
-      Number using O5 and O6:                   19
+  Number of Slice LUTs:                        246 out of 101,400    1%
+    Number used as logic:                      244 out of 101,400    1%
+      Number using O6 output only:             153
+      Number using O5 output only:              26
+      Number using O5 and O6:                   65
       Number used as ROM:                        0
     Number used as Memory:                       0 out of  35,000    0%
     Number used exclusively as route-thrus:      2
@@ -35,14 +35,14 @@ Slice Logic Utilization:
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    52 out of  25,350    1%
-  Number of LUT Flip Flop pairs used:          133
-    Number with an unused Flip Flop:            52 out of     133   39%
-    Number with an unused LUT:                  25 out of     133   18%
-    Number of fully used LUT-FF pairs:          56 out of     133   42%
-    Number of unique control sets:               6
+  Number of occupied Slices:                   109 out of  25,350    1%
+  Number of LUT Flip Flop pairs used:          270
+    Number with an unused Flip Flop:           129 out of     270   47%
+    Number with an unused LUT:                  24 out of     270    8%
+    Number of fully used LUT-FF pairs:         117 out of     270   43%
+    Number of unique control sets:              18
     Number of slice register sites lost
-      to control set restrictions:              26 out of 202,800    1%
+      to control set restrictions:              78 out of 202,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -53,16 +53,16 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        32 out of     400    8%
-    Number of LOCed IOBs:                       32 out of      32  100%
+  Number of bonded IOBs:                        41 out of     400   10%
+    Number of LOCed IOBs:                       41 out of      41  100%
 
 Specific Feature Utilization:
-  Number of RAMB36E1/FIFO36E1s:                 14 out of     325    4%
-    Number using RAMB36E1 only:                 14
+  Number of RAMB36E1/FIFO36E1s:                 10 out of     325    3%
+    Number using RAMB36E1 only:                 10
     Number using FIFO36E1 only:                  0
   Number of RAMB18E1/FIFO18E1s:                  0 out of     650    0%
-  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
-    Number used as BUFGs:                        2
+  Number of BUFG/BUFGCTRLs:                      3 out of      32    9%
+    Number used as BUFGs:                        3
     Number used as BUFGCTRLs:                    0
   Number of IDELAYE2/IDELAYE2_FINEDELAYs:        0 out of     400    0%
   Number of ILOGICE2/ILOGICE3/ISERDESE2s:        0 out of     400    0%
@@ -93,11 +93,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.72
+Average Fanout of Non-Clock Nets:                3.80
 
-Peak Memory Usage:  5143 MB
-Total REAL time to MAP completion:  27 secs 
-Total CPU time to MAP completion:   27 secs 
+Peak Memory Usage:  5144 MB
+Total REAL time to MAP completion:  28 secs 
+Total CPU time to MAP completion:   28 secs 
 
 Table of Contents
 -----------------
@@ -120,6 +120,22 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:Pack:2912 - The LUT-1 inverter "k0/state_inv1_INV_0" failed to join the
+   "OLOGICE2" comp matched to output buffer "BTN_Y_3_IOBUF/OBUFT".  This may
+   result in suboptimal timing.  The LUT-1 inverter k0/state_inv1_INV_0 drives
+   multiple loads.
+WARNING:Pack:2912 - The LUT-1 inverter "k0/state_inv1_INV_0" failed to join the
+   "OLOGICE2" comp matched to output buffer "BTN_Y_2_IOBUF/OBUFT".  This may
+   result in suboptimal timing.  The LUT-1 inverter k0/state_inv1_INV_0 drives
+   multiple loads.
+WARNING:Pack:2912 - The LUT-1 inverter "k0/state_inv1_INV_0" failed to join the
+   "OLOGICE2" comp matched to output buffer "BTN_Y_1_IOBUF/OBUFT".  This may
+   result in suboptimal timing.  The LUT-1 inverter k0/state_inv1_INV_0 drives
+   multiple loads.
+WARNING:Pack:2912 - The LUT-1 inverter "k0/state_inv1_INV_0" failed to join the
+   "OLOGICE2" comp matched to output buffer "BTN_Y_0_IOBUF/OBUFT".  This may
+   result in suboptimal timing.  The LUT-1 inverter k0/state_inv1_INV_0 drives
+   multiple loads.
 
 Section 3 - Informational
 -------------------------
@@ -142,9 +158,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
- 342 block(s) removed
-  18 block(s) optimized away
- 911 signal(s) removed
+ 354 block(s) removed
+  19 block(s) optimized away
+ 951 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -193,12 +209,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_111" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_111" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_71" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<7>" is sourceless and has been removed.
@@ -241,6 +251,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<7>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<7>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1316" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1316" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<7>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<7>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<7>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<7>" is sourceless and has been removed.
@@ -520,12 +548,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_112" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_112" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_72" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<8>" is sourceless and has been removed.
@@ -568,6 +590,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<8>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<8>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1326" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1326" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<8>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<8>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<8>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<8>" is sourceless and has been removed.
@@ -871,12 +911,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_115" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_115" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_75" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<0>" is sourceless and has been removed.
@@ -919,6 +953,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<0>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1356" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1356" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<0>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<0>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<0>" is sourceless and has been removed.
@@ -1198,12 +1250,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_116" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_116" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_76" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<1>" is sourceless and has been removed.
@@ -1246,6 +1292,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<1>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1366" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1366" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<1>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<1>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<1>" is sourceless and has been removed.
@@ -1525,12 +1589,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_117" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_117" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_77" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<2>" is sourceless and has been removed.
@@ -1573,6 +1631,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<2>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1376" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1376" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<2>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<2>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<2>" is sourceless and has been removed.
@@ -1852,12 +1928,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_118" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_118" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_78" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<3>" is sourceless and has been removed.
@@ -1900,6 +1970,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<3>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1386" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1386" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<3>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<3>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<3>" is sourceless and has been removed.
@@ -2179,12 +2267,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_119" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_119" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_79" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<4>" is sourceless and has been removed.
@@ -2227,6 +2309,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<4>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<4>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1396" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_1396" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<4>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<4>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<4>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<4>" is sourceless and has been removed.
@@ -2506,12 +2606,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_1110" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_1110" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_710" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<5>" is sourceless and has been removed.
@@ -2554,6 +2648,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<5>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<5>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_13106" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_13106" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<5>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<5>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<5>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<5>" is sourceless and has been removed.
@@ -2833,12 +2945,6 @@ The signal
  Sourceless block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
 a.A/Mmux_dout_mux_1111" (ROM) removed.
-  The signal
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_1111" is sourceless and has been removed.
-   Sourceless block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
-a.A/Mmux_dout_mux_711" (ROM) removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.ram_douta<6>" is sourceless and has been removed.
@@ -2881,6 +2987,24 @@ The signal
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.ram_douta<6>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.ram_douta<6>" is sourceless and has been removed.
+ Sourceless block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_13116" (ROM) removed.
+  The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_
+a.A/Mmux_dout_mux_13116" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.ram_douta<6>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.ram_douta<6>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.ram_douta<6>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 27].ram.ram_douta<6>" is sourceless and has been removed.
@@ -3183,6 +3307,9 @@ The signal
 y<68>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
+y<4>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
 y<20>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
@@ -3207,6 +3334,9 @@ The signal
 y<70>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
+y<6>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
 y<22>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
@@ -3229,6 +3359,9 @@ y<13>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
 y<69>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
+y<5>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
 y<21>" is sourceless and has been removed.
@@ -3277,6 +3410,9 @@ y<15>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
 y<71>" is sourceless and has been removed.
+The signal
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
+y<7>" is sourceless and has been removed.
 The signal
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_arra
 y<23>" is sourceless and has been removed.
@@ -3597,6 +3733,9 @@ Unused block
 .bindec_inst_a/ADDR[6]_GND_16_o_equal_59_o<6>1" (ROM) removed.
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
+.bindec_inst_a/ADDR[6]_GND_16_o_equal_5_o<6>1" (ROM) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
 .bindec_inst_a/ADDR[6]_GND_16_o_equal_60_o<6>1" (ROM) removed.
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
@@ -3612,7 +3751,28 @@ Unused block
 .bindec_inst_a/ADDR[6]_GND_16_o_equal_64_o<6>1" (ROM) removed.
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
+.bindec_inst_a/ADDR[6]_GND_16_o_equal_6_o<6>1" (ROM) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
+.bindec_inst_a/ADDR[6]_GND_16_o_equal_7_o<6>1" (ROM) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
+.bindec_inst_a/ADDR[6]_GND_16_o_equal_8_o<6>1" (ROM) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
 .bindec_inst_a/ADDR[6]_GND_16_o_equal_9_o<6>1" (ROM) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
+.bindec_inst_a/ADDR[6]_PWR_16_o_equal_69_o<6>1" (ROM) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
+.bindec_inst_a/ADDR[6]_PWR_16_o_equal_70_o<6>1" (ROM) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
+.bindec_inst_a/ADDR[6]_PWR_16_o_equal_71_o<6>1" (ROM) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
+.bindec_inst_a/ADDR[6]_PWR_16_o_equal_72_o<6>1" (ROM) removed.
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a
 .bindec_inst_a/ADDR[6]_PWR_16_o_equal_73_o<6>1" (ROM) removed.
@@ -3652,6 +3812,18 @@ Unused block
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T" (RAMB36E1) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+21].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+22].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+23].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+24].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 25].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
@@ -3843,6 +4015,18 @@ Unused block
 80].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+85].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+86].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+87].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
+88].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
+Unused block
+"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 89].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
@@ -3883,21 +4067,25 @@ Unused block
 Unused block
 "Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
 84].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
-Unused block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
-85].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
-Unused block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
-86].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
-Unused block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
-87].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
-Unused block
-"Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[
-88].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram" (RAMB36E1) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
+LUT3
+		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
+a.bindec_inst_a/ADDR[6]_GND_16_o_equal_13_o<6>11
+   optimized to 0
+LUT3
+		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
+a.bindec_inst_a/ADDR[6]_GND_16_o_equal_14_o<6>11
+   optimized to 0
+LUT3
+		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
+a.bindec_inst_a/ADDR[6]_GND_16_o_equal_15_o<6>11
+   optimized to 0
+LUT3
+		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
+a.bindec_inst_a/ADDR[6]_GND_16_o_equal_16_o<6>11
+   optimized to 0
 LUT5
 		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
 a.bindec_inst_a/ADDR[6]_PWR_16_o_equal_65_o<6>1
@@ -3914,21 +4102,9 @@ LUT5
 		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
 a.bindec_inst_a/ADDR[6]_PWR_16_o_equal_68_o<6>1
    optimized to 0
-LUT5
-		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
-a.bindec_inst_a/ADDR[6]_PWR_16_o_equal_69_o<6>1
-   optimized to 0
-LUT5
-		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
-a.bindec_inst_a/ADDR[6]_PWR_16_o_equal_70_o<6>1
-   optimized to 0
-LUT5
-		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
-a.bindec_inst_a/ADDR[6]_PWR_16_o_equal_71_o<6>1
-   optimized to 0
-LUT5
-		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_
-a.bindec_inst_a/ADDR[6]_PWR_16_o_equal_72_o<6>1
+FDE
+		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux
+_a.A/sel_pipe_2
    optimized to 0
 FDE
 		Dino/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux
@@ -3971,6 +4147,15 @@ Section 6 - IOB Properties
 | B<1>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
 | B<2>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
 | B<3>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
+| BTN_X<0>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
+| BTN_X<1>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
+| BTN_X<2>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
+| BTN_X<3>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
+| BTN_X<4>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
+| BTN_Y<0>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
+| BTN_Y<1>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
+| BTN_Y<2>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
+| BTN_Y<3>                           | IOB              | BIDIR     | LVCMOS18             |       | 12       | SLOW |              | PULLUP   |          |
 | G<0>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
 | G<1>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |
 | G<2>                               | IOB33            | OUTPUT    | LVCMOS33             |       | 12       | FAST |              |          |          |

@@ -17,6 +17,18 @@ SW&lt;10&gt;_IBUF</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
+<msg type="warning" file="Pack" num="2912" delta="old" >The LUT-1 inverter &quot;<arg fmt="%s" index="1">k0/state_inv1_INV_0</arg>&quot; failed to join the &quot;<arg fmt="%s" index="2">OLOGICE2</arg>&quot; comp matched to output buffer &quot;<arg fmt="%s" index="3">BTN_Y_3_IOBUF/OBUFT</arg>&quot;.  This may result in suboptimal timing.  <arg fmt="%z" index="4">The LUT-1 inverter k0/state_inv1_INV_0 drives multiple loads.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2912" delta="old" >The LUT-1 inverter &quot;<arg fmt="%s" index="1">k0/state_inv1_INV_0</arg>&quot; failed to join the &quot;<arg fmt="%s" index="2">OLOGICE2</arg>&quot; comp matched to output buffer &quot;<arg fmt="%s" index="3">BTN_Y_2_IOBUF/OBUFT</arg>&quot;.  This may result in suboptimal timing.  <arg fmt="%z" index="4">The LUT-1 inverter k0/state_inv1_INV_0 drives multiple loads.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2912" delta="old" >The LUT-1 inverter &quot;<arg fmt="%s" index="1">k0/state_inv1_INV_0</arg>&quot; failed to join the &quot;<arg fmt="%s" index="2">OLOGICE2</arg>&quot; comp matched to output buffer &quot;<arg fmt="%s" index="3">BTN_Y_1_IOBUF/OBUFT</arg>&quot;.  This may result in suboptimal timing.  <arg fmt="%z" index="4">The LUT-1 inverter k0/state_inv1_INV_0 drives multiple loads.</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="2912" delta="old" >The LUT-1 inverter &quot;<arg fmt="%s" index="1">k0/state_inv1_INV_0</arg>&quot; failed to join the &quot;<arg fmt="%s" index="2">OLOGICE2</arg>&quot; comp matched to output buffer &quot;<arg fmt="%s" index="3">BTN_Y_0_IOBUF/OBUFT</arg>&quot;.  This may result in suboptimal timing.  <arg fmt="%z" index="4">The LUT-1 inverter k0/state_inv1_INV_0 drives multiple loads.</arg>
+</msg>
+
 <msg type="info" file="Pack" num="1716" delta="old" >Initializing temperature to <arg fmt="%0.3f" index="1">85.000</arg> Celsius. (default - Range: <arg fmt="%0.3f" index="2">0.000</arg> to <arg fmt="%0.3f" index="3">85.000</arg> Celsius)
 </msg>
 

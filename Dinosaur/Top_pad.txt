@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Dec 25 18:56:06 2019
+Thu Dec 26 18:35:36 2019
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -631,12 +631,12 @@ Pinout by Pin Number:
 |V11       |           |IOB18M   |IO_L1P_T0_33                |UNUSED   |           |33            |          |         |           |         |         |          |           |                |
 |V12       |           |IOB18    |IO_25_VRP_33                |UNUSED   |           |33            |          |         |           |         |         |          |           |                |
 |V13       |           |IOB18    |IO_0_VRN_32                 |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
-|V14       |           |IOB18M   |IO_L24P_T3_32               |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
+|V14       |BTN_Y<2>   |IOB      |IO_L24P_T3_32               |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
 |V15       |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |V16       |           |IOB18M   |IO_L20P_T3_32               |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
-|V17       |           |IOB18S   |IO_L20N_T3_32               |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
-|V18       |           |IOB18M   |IO_L23P_T3_32               |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
-|V19       |           |IOB18S   |IO_L23N_T3_32               |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
+|V17       |BTN_X<0>   |IOB      |IO_L20N_T3_32               |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
+|V18       |BTN_Y<0>   |IOB      |IO_L23P_T3_32               |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
+|V19       |BTN_Y<1>   |IOB      |IO_L23N_T3_32               |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
 |V20       |           |         |VCCO_12                     |         |           |12            |          |         |           |         |any******|          |           |                |
 |V21       |           |IOB33M   |IO_L6P_T0_12                |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |V22       |           |IOB33S   |IO_L1N_T0_12                |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
@@ -657,12 +657,12 @@ Pinout by Pin Number:
 |W11       |           |IOB18S   |IO_L1N_T0_33                |UNUSED   |           |33            |          |         |           |         |         |          |           |                |
 |W12       |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |W13       |rst        |IOB      |IO_25_VRP_32                |INPUT    |LVCMOS18*  |32            |          |         |           |NONE     |         |LOCATED   |NO         |NONE            |
-|W14       |           |IOB18S   |IO_L24N_T3_32               |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
-|W15       |           |IOB18M   |IO_L22P_T3_32               |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
-|W16       |           |IOB18S   |IO_L22N_T3_32               |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
+|W14       |BTN_Y<3>   |IOB      |IO_L24N_T3_32               |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
+|W15       |BTN_X<3>   |IOB      |IO_L22P_T3_32               |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
+|W16       |BTN_X<4>   |IOB      |IO_L22N_T3_32               |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
 |W17       |           |         |VCCO_32                     |         |           |32            |          |         |           |         |1.80     |          |           |                |
-|W18       |           |IOB18M   |IO_L21P_T3_DQS_32           |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
-|W19       |           |IOB18S   |IO_L21N_T3_DQS_32           |UNUSED   |           |32            |          |         |           |         |         |          |           |                |
+|W18       |BTN_X<1>   |IOB      |IO_L21P_T3_DQS_32           |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
+|W19       |BTN_X<2>   |IOB      |IO_L21N_T3_DQS_32           |BIDIR    |LVCMOS18*  |32            |12        |SLOW     |PULLUP     |NONE     |         |LOCATED   |NO         |NONE            |
 |W20       |           |IOB33M   |IO_L15P_T2_DQS_12           |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |W21       |           |IOB33S   |IO_L6N_T0_VREF_12           |UNUSED   |           |12            |          |         |           |         |         |          |           |                |
 |W22       |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |

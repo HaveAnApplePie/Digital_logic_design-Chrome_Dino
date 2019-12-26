@@ -185,7 +185,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Top.lso"/>
       <outfile xil_pn:name="Top.ngc"/>
@@ -207,6 +209,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Top.bld"/>
       <outfile xil_pn:name="Top.ngd"/>
       <outfile xil_pn:name="Top_ngdbuild.xrpt"/>
@@ -217,6 +222,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Top.pcf"/>
       <outfile xil_pn:name="Top_map.map"/>
       <outfile xil_pn:name="Top_map.mrp"/>
@@ -231,6 +239,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Top.ncd"/>
       <outfile xil_pn:name="Top.pad"/>
       <outfile xil_pn:name="Top.par"/>
@@ -245,6 +254,7 @@
     <transform xil_pn:end_ts="1577357756" xil_pn:in_ck="112961937430" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="3160107541638749219" xil_pn:start_ts="1577357712">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Top.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="top.bgn"/>
@@ -257,11 +267,13 @@
     <transform xil_pn:end_ts="1577357756" xil_pn:in_ck="154288899584" xil_pn:name="TRAN_impactProgrammingTool" xil_pn:prop_ck="6552783135083104433" xil_pn:start_ts="1577357756">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1577268532" xil_pn:in_ck="154288899584" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="-8511014616323034073" xil_pn:start_ts="1577268524">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForced"/>
       <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
@@ -270,6 +282,7 @@
     <transform xil_pn:end_ts="1577357712" xil_pn:in_ck="-338314193334097611" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1577357700">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Top.twr"/>
       <outfile xil_pn:name="Top.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

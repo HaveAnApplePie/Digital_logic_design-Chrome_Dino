@@ -6,7 +6,8 @@ Command Line: E:\Software\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
 xc7k160t-fbg676-1 Top.ngc Top.ngd
 
 Reading NGO file "F:/ZJU/2019aut-win/LCDF/Dinosaur/Top.ngc" ...
-Loading design module "ipcore_dir/Dinosaur.ngc"...
+Loading design module "ipcore_dir/DinoL.ngc"...
+Loading design module "ipcore_dir/DinoR.ngc"...
 Gathering constraint information from source properties...
 Done.
 
@@ -16,19 +17,32 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'Dino/wea<0>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<11>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<10>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<9>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<8>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<7>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<6>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<5>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<4>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<3>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<2>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<1>' has no driver
-WARNING:NgdBuild:452 - logical net 'Dino/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoL/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'DinoR/dina<0>' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -39,12 +53,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  13
+  Number of warnings:  26
 
-Total memory usage is 4503864 kilobytes
+Total memory usage is 4471512 kilobytes
 
 Writing NGD file "Top.ngd" ...
-Total REAL time to NGDBUILD completion:  11 sec
-Total CPU time to NGDBUILD completion:   11 sec
+Total REAL time to NGDBUILD completion:  5 sec
+Total CPU time to NGDBUILD completion:   5 sec
 
 Writing NGDBUILD log file "Top.bld"...

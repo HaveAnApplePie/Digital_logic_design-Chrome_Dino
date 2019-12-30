@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Dec 26 18:54:58 2019
+Mon Dec 30 16:36:37 2019
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -459,7 +459,7 @@ Pinout by Pin Number:
 |L21       |           |         |VCCO_14                     |         |           |14            |          |         |           |         |any******|          |           |                |
 |L22       |           |IOB33M   |IO_L23P_T3_A03_D19_14       |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
 |L23       |           |IOB33    |IO_25_14                    |UNUSED   |           |14            |          |         |           |         |         |          |           |                |
-|L24       |           |IOB33S   |IO_L8N_T1_13                |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
+|L24       |SEGLED_DO  |IOB33    |IO_L8N_T1_13                |OUTPUT   |LVCMOS33   |13            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |L25       |           |IOB33S   |IO_L3N_T0_DQS_13            |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |L26       |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
 |M1        |           |OPAD     |MGTXTXN1_115                |UNUSED   |           |              |          |         |           |         |         |          |           |                |
@@ -481,11 +481,11 @@ Pinout by Pin Number:
 |M17       |           |IOB33M   |IO_L23P_T3_FOE_B_15         |UNUSED   |           |15            |          |         |           |         |         |          |           |                |
 |M18       |           |         |VCCO_15                     |         |           |15            |          |         |           |         |any******|          |           |                |
 |M19       |           |IOB33S   |IO_L22N_T3_13               |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
-|M20       |           |IOB33S   |IO_L7N_T1_13                |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
+|M20       |SEGLED_CLR |IOB33    |IO_L7N_T1_13                |OUTPUT   |LVCMOS33   |13            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |M21       |VS         |IOB33    |IO_L10P_T1_13               |OUTPUT   |LVCMOS33   |13            |12        |FAST     |           |         |         |LOCATED   |NO         |NONE            |
 |M22       |HS         |IOB33    |IO_L10N_T1_13               |OUTPUT   |LVCMOS33   |13            |12        |FAST     |           |         |         |LOCATED   |NO         |NONE            |
 |M23       |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
-|M24       |           |IOB33M   |IO_L8P_T1_13                |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
+|M24       |SEGLED_CLK |IOB33    |IO_L8P_T1_13                |OUTPUT   |LVCMOS33   |13            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |M25       |           |IOB33M   |IO_L3P_T0_DQS_13            |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |M26       |           |IOB33S   |IO_L5N_T0_13                |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |N1        |           |         |GND                         |         |           |              |          |         |           |         |         |          |           |                |
@@ -557,7 +557,7 @@ Pinout by Pin Number:
 |R15       |           |         |VCCINT                      |         |           |              |          |         |           |         |1.0      |          |           |                |
 |R16       |           |IOB33M   |IO_L21P_T3_DQS_13           |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
 |R17       |           |IOB33S   |IO_L21N_T3_DQS_13           |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
-|R18       |           |IOB33M   |IO_L24P_T3_13               |UNUSED   |           |13            |          |         |           |         |         |          |           |                |
+|R18       |SEGLED_PEN |IOB33    |IO_L24P_T3_13               |OUTPUT   |LVCMOS33   |13            |12        |SLOW     |           |         |         |LOCATED   |NO         |NONE            |
 |R19       |           |         |VCCO_13                     |         |           |13            |          |         |           |         |3.30     |          |           |                |
 |R20       |B<1>       |IOB33    |IO_L16N_T2_13               |OUTPUT   |LVCMOS33   |13            |12        |FAST     |           |         |         |LOCATED   |NO         |NONE            |
 |R21       |R<2>       |IOB33    |IO_L13P_T2_MRCC_13          |OUTPUT   |LVCMOS33   |13            |12        |FAST     |           |         |         |LOCATED   |NO         |NONE            |

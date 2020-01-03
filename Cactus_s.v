@@ -28,23 +28,22 @@ module Cactus_s(					 //小仙人掌 small cactus
 	 output reg finish			 //完成信号
     );
 	 parameter	
-		HEIGHT  	   = 10,			 //图像高度
-		LENGTH      = 8,			 //图像长度
+		HEIGHT  	   = 49,			 //图像高度
+		LENGTH      = 24,			 //图像长度
 		COLNUM      = 640,	    //总列数
-		ROW_HIGHEST = 130;	    //该模块所在的最高的行数，以0开始
+		ROW_HIGHEST = 160;	    //该模块所在的最高的行数，以0开始
 
 	//这里可以用IP核代替
-	 reg [11:0]data;  							//每个为12位数据
-	 reg [15:0]addr;								//对应于       ||||||||||■ ■||||||||||      的位置
+	 wire [11:0]data;  							//每个为12位数据
+	 wire [15:0]addr;								//对应于       ||||||||||■ ■||||||||||      的位置
 														//            ||		 ||■■■||		  ||
 														//				  |||||||||| ■ ||||||||||
 	 initial begin
-		addr  <= 0;
 		count <= LENGTH+COLNUM;					//保证一开始finish一直为1，从而输出一直为白色
 	 end
-	//////
+
 	
-	Cactus_s_ip CACTUS(clk_ip,addr,data);
+	Cactus_s_ip CACTUS(clk_ip,{addr+1'b1},data);	//取出来的值会延时一个时钟周期clk_ip，要不要把address+1？？？
 	
 	
 	reg [11: 0]count;				 //起始列的位置
@@ -54,14 +53,11 @@ module Cactus_s(					 //小仙人掌 small cactus
 		else
 			count <= count + 1'b1;
 	end
-	
-//	assign addr = row_addr*COLNUM+col_addr+count; 	//按行放图像像素点的值时
-	
-	
-
+			
+	assign addr	 =	(row_addr-(ROW_HIGHEST-HEIGHT+1))*LENGTH+			//对应文件里的行
+			          count+col_addr-COLNUM ;						      //对应文件里的列
+																					
 	always@(*)begin
-		addr	 <=	(row_addr-(ROW_HIGHEST-HEIGHT+1))*LENGTH+			//对应文件里的行
-			          count+col_addr-COLNUM;						         //对应文件里的列
 		
 		if(count>=LENGTH+COLNUM)	 //如果已经移出，则输出finish信号
 			finish <= 1;
@@ -72,15 +68,17 @@ module Cactus_s(					 //小仙人掌 small cactus
 	
 	always @(*) begin
 		if(!finish)begin	//未完成输出
-			if ((count+col_addr) >= COLNUM && 				//左边界 闭
-				(count+col_addr) < (COLNUM+LENGTH) &&	   //右边界 开
-				row_addr <= ROW_HIGHEST &&						//下边界 闭
-				row_addr > (ROW_HIGHEST-HEIGHT))				//上边界 开
-			
-				dout = data;		    							//特定颜色
+			if ( ((count+col_addr) >= COLNUM )&& 				//左边界 闭
+				  ((count+col_addr) < (COLNUM+LENGTH))&&	   //右边界 开
+				  (row_addr <= ROW_HIGHEST) &&					//下边界 闭
+				  (row_addr > (ROW_HIGHEST-HEIGHT)))	begin	//上边界 开			
+				dout <= data;		    							   //特定颜色
+			end
+			else
+				dout <=  12'hfff;    //白色
 		end
 		else	//完成输出
-				dout =  12'hfff;    //白色
+				dout <=  12'hfff;    //白色
 	end
 
 

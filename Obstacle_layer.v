@@ -28,6 +28,17 @@ module Obstacle_layer(			 //障碍物图层
 	 output wire [11:0] dout	    //障碍物的数据输出bbbb_gggg_rrrr     
 	 );
 
+/*
+	wire[11:0] dout;	//障碍物图像ip核输出，4*3 rgb   使用方法
+	Obstacle_layer OLAYER(
+		.clk_div(clk_div), 
+		.col_addr(col_addr), 
+		.row_addr(row_addr), 
+		.dout(dout)
+		);
+*/	
+
+
 	 parameter	
 		min  	   = 0,			 //最小图层编号
 		max      = 5;			 //最大图层编号

@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Cactus_s(					 //小仙人掌 small cactus
+module Cactus_b(					 //大仙人掌 big cactus
 	 input wire clk_ip,			 //给IP核用的时钟信号，频率更高，clk_div[1]
 	 input wire clk,				 //物体向前移动一列的时钟信号
 	 input wire start,			 //开始信号,为一个短脉冲  接到短脉冲之后开始输出图像
@@ -29,8 +29,8 @@ module Cactus_s(					 //小仙人掌 small cactus
 	 output reg finish			 //完成信号
     );
 	 parameter	
-		HEIGHT  	   = 49,			 //图像高度
-		LENGTH      = 24,			 //图像长度
+		HEIGHT  	   = 68,			 //图像高度
+		LENGTH      = 34,			 //图像长度
 		COLNUM      = 640,	    //总列数
 		ROW_HIGHEST = 300;	    //该模块所在的最高的行数，以0开始
 
@@ -45,7 +45,7 @@ module Cactus_s(					 //小仙人掌 small cactus
 	 end
 
 	
-	Cactus_s_ip CACTUS(clk_ip,{addr+1'b1},data);	//取出来的值会延时一个时钟周期clk_ip，要不要把address+1？？？
+	Cactus_b_ip CACTUS(clk_ip,{addr+1'b1},data);	//取出来的值会延时一个时钟周期clk_ip，要不要把address+1？？？
 	
 	
 	reg [11: 0]count;				 //起始列的位置
@@ -57,14 +57,14 @@ module Cactus_s(					 //小仙人掌 small cactus
 			
 		
 	end
-/*	
-	assign col   = HEIGHT - 1 - (row_addr-(ROW_HIGHEST-HEIGHT+1));	//对应文件里的列
+	
+/*	assign col   = HEIGHT - 1 - (row_addr-(ROW_HIGHEST-HEIGHT+1));	//对应文件里的列
 	assign row   = (count+col_addr-COLNUM);								//对应文件里的行
 	assign addr	 =	row*LENGTH+col;					
 */
 	assign addr	 =	(row_addr-(ROW_HIGHEST-HEIGHT+1))*LENGTH+			//对应文件里的行
 			          count+col_addr-COLNUM ;						      //对应文件里的列
-										
+						 
 	always@(*)begin
 		
 		if(count>=LENGTH+COLNUM)	 //如果已经移出，则输出finish信号
@@ -78,9 +78,9 @@ module Cactus_s(					 //小仙人掌 small cactus
 		if(!rdn)begin  //读入操作
 			if(!finish)begin	//未完成输出
 				if ( ((count+col_addr) >= COLNUM)&& 				//左边界 闭
-					((count+col_addr) < (COLNUM+LENGTH))&&	   //右边界 开
-					(row_addr <= ROW_HIGHEST) &&					//下边界 闭
-					(row_addr > (ROW_HIGHEST-HEIGHT)))	begin	//上边界 开			
+					((count+col_addr) < (COLNUM+LENGTH))&&	   	//右边界 开
+					(row_addr <= ROW_HIGHEST) &&						//下边界 闭
+					(row_addr > (ROW_HIGHEST-HEIGHT)))	begin		//上边界 开			
 					dout <= data;		    							   //特定颜色
 					//dout <= 12'h555;
 				end

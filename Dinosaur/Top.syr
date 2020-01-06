@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.06 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: Top.prj
 
@@ -108,45 +108,53 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\SegmentDecoder.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\SegmentDecoder.v" into library work
 Parsing module <SegmentDecoder>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\ShiftReg.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ipcore_dir\Cactus_s_ip.v" into library work
+Parsing module <Cactus_s_ip>.
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ShiftReg.v" into library work
 Parsing module <ShiftReg>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\Seg7Remap.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Seg7Remap.v" into library work
 Parsing module <Seg7Remap>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\Seg7Decode.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Seg7Decode.v" into library work
 Parsing module <Seg7Decode>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\AntiJitter.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Cactus_s.v" into library work
+Parsing module <Cactus_s>.
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\AntiJitter.v" into library work
 Parsing module <AntiJitter>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\vgac.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\vgac.v" into library work
 Parsing module <vgac>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\Seg7Device.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Seg7Device.v" into library work
 Parsing module <Seg7Device>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\ScoreCounter.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ScoreCounter.v" into library work
 Parsing module <ScoreCounter>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\Keypad.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\PS2_keyboard.v" into library work
+Parsing module <PS2_keyboard>.
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Obstacle_layer.v" into library work
+Parsing module <Obstacle_layer>.
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Keypad.v" into library work
 Parsing module <Keypad>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\ipcore_dir\DinoR.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ipcore_dir\DinoR.v" into library work
 Parsing module <DinoR>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\ipcore_dir\DinoL.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ipcore_dir\DinoL.v" into library work
 Parsing module <DinoL>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\clkdiv.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\clkdiv.v" into library work
 Parsing module <clkdiv>.
-Analyzing Verilog file "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" into library work
+Analyzing Verilog file "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" into library work
 Parsing module <Top>.
 
 =========================================================================
 *                            HDL Elaboration                            *
 =========================================================================
-WARNING:HDLCompiler:1016 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 44: Port dbg_keyLine is not connected to this instance
-WARNING:HDLCompiler:1016 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 49: Port rdn is not connected to this instance
-WARNING:HDLCompiler:1016 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 62: Port wea is not connected to this instance
-WARNING:HDLCompiler:1016 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 64: Port wea is not connected to this instance
-WARNING:HDLCompiler:1016 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 70: Port segment is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 46: Port dbg_keyLine is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 51: Port rdn is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 68: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 70: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 84: Port segment is not connected to this instance
 
 Elaborating module <Top>.
-WARNING:HDLCompiler:872 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 55: Using initial value of Dino0_X since it is never assigned
-WARNING:HDLCompiler:872 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 56: Using initial value of Dino1_X since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 61: Using initial value of Dino0_X since it is never assigned
+WARNING:HDLCompiler:872 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 62: Using initial value of Dino1_X since it is never assigned
 
 Elaborating module <clkdiv>.
 
@@ -156,13 +164,27 @@ Elaborating module <Keypad>.
 
 Elaborating module <vgac>.
 
+Elaborating module <PS2_keyboard>.
+
 Elaborating module <DinoL>.
-WARNING:HDLCompiler:1499 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\ipcore_dir\DinoL.v" Line 39: Empty module <DinoL> remains a black box.
-WARNING:HDLCompiler:189 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 62: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 19-bit.
+WARNING:HDLCompiler:1499 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ipcore_dir\DinoL.v" Line 39: Empty module <DinoL> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 68: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 19-bit.
 
 Elaborating module <DinoR>.
-WARNING:HDLCompiler:1499 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\ipcore_dir\DinoR.v" Line 39: Empty module <DinoR> remains a black box.
-WARNING:HDLCompiler:189 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 64: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 19-bit.
+WARNING:HDLCompiler:1499 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ipcore_dir\DinoR.v" Line 39: Empty module <DinoR> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 70: Size mismatch in connection of port <addra>. Formal port size is 12-bit while actual signal size is 19-bit.
+
+Elaborating module <Obstacle_layer>.
+WARNING:HDLCompiler:872 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Obstacle_layer.v" Line 54: Using initial value of seed since it is never assigned
+WARNING:HDLCompiler:816 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Obstacle_layer.v" Line 61: System function call random not supported
+
+Elaborating module <Cactus_s>.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Cactus_s.v" Line 42: Result of 10-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <Cactus_s_ip>.
+WARNING:HDLCompiler:1499 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ipcore_dir\Cactus_s_ip.v" Line 39: Empty module <Cactus_s_ip> remains a black box.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Cactus_s.v" Line 57: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:634 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Obstacle_layer.v" Line 47: Net <finish[5]> does not have a driver.
 
 Elaborating module <ScoreCounter>.
 
@@ -175,64 +197,62 @@ Elaborating module <SegmentDecoder>.
 Elaborating module <Seg7Remap>.
 
 Elaborating module <ShiftReg(WIDTH=64)>.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 114: Result of 32-bit expression is truncated to fit in 19-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 121: Result of 32-bit expression is truncated to fit in 19-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 137: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 142: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 147: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 157: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 162: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 167: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 177: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 182: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 187: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 197: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 202: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:413 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 207: Result of 10-bit expression is truncated to fit in 9-bit target.
-WARNING:HDLCompiler:552 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 62: Input port wea[0] is not connected on this instance
-WARNING:HDLCompiler:552 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" Line 64: Input port wea[0] is not connected on this instance
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<1>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<2>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<3>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<4>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<5>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<6>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<7>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<8>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<9>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<10>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<11>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<12>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<13>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<14>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
-WARNING:Xst:2972 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40. All outputs of instance <a0<15>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 131: Result of 32-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 138: Result of 32-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 154: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 159: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 164: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 174: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 179: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 184: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 194: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 199: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 204: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 214: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 219: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 224: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:552 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 68: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" Line 70: Input port wea[0] is not connected on this instance
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<1>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<2>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<3>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<4>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<5>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<6>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<7>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<8>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<9>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<10>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<11>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<12>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<13>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42. All outputs of instance <a0<14>> of block <AntiJitter> are unconnected in block <Top>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Top>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v".
 WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<1>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<2>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<3>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<4>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<5>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<6>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<7>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<8>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<9>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<10>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<11>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<12>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<13>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<14>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 40: Output port <O> of the instance <a0<15>> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 44: Output port <dbg_keyLine> of the instance <k0> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 49: Output port <rdn> of the instance <vga> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 70: Output port <segment> of the instance <segDevice> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 70: Output port <anode> of the instance <segDevice> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<1>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<2>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<3>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<4>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<5>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<6>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<7>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<8>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<9>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<10>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<11>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<12>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<13>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 42: Output port <O> of the instance <a0<14>> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 46: Output port <dbg_keyLine> of the instance <k0> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 51: Output port <rdn> of the instance <vga> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 84: Output port <segment> of the instance <segDevice> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.v" line 84: Output port <anode> of the instance <segDevice> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <isJump>.
     Found 8-bit register for signal <jumpTime>.
     Found 1-bit register for signal <isJump0>.
@@ -244,54 +264,54 @@ INFO:Xst:3210 - "F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.v" line 70: Output port <a
     Found 9-bit register for signal <Dino0_Y>.
     Found 9-bit register for signal <Dino1_Y>.
     Found 1-bit register for signal <wasReady>.
-    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_19_OUT> created at line 114.
-    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_27_OUT> created at line 121.
-    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_28_OUT> created at line 121.
-    Found 10-bit adder for signal <n0274> created at line 113.
-    Found 32-bit adder for signal <n0220> created at line 114.
-    Found 10-bit adder for signal <n0280> created at line 120.
-    Found 32-bit adder for signal <n0225> created at line 121.
-    Found 8-bit adder for signal <jumpTime[7]_GND_1_o_add_38_OUT> created at line 138.
-    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_56_OUT> created at line 157.
-    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_62_OUT> created at line 162.
-    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_68_OUT> created at line 167.
-    Found 8-bit adder for signal <jumpTime0[7]_GND_1_o_add_74_OUT> created at line 178.
-    Found 9-bit adder for signal <Dino1_Y[8]_GND_1_o_add_92_OUT> created at line 197.
-    Found 9-bit adder for signal <Dino1_Y[8]_GND_1_o_add_98_OUT> created at line 202.
-    Found 9-bit adder for signal <Dino1_Y[8]_GND_1_o_add_104_OUT> created at line 207.
-    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_38_OUT<8:0>> created at line 137.
-    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_44_OUT<8:0>> created at line 142.
-    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_50_OUT<8:0>> created at line 147.
-    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_74_OUT<8:0>> created at line 177.
-    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_80_OUT<8:0>> created at line 182.
-    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_86_OUT<8:0>> created at line 187.
-    Found 8-bit comparator greater for signal <n0006> created at line 94
-    Found 8-bit comparator greater for signal <n0010> created at line 95
-    Found 9-bit comparator lessequal for signal <n0034> created at line 113
-    Found 10-bit comparator lessequal for signal <n0038> created at line 113
-    Found 10-bit comparator lessequal for signal <n0044> created at line 120
-    Found 10-bit comparator lessequal for signal <n0046> created at line 120
-    Found 9-bit comparator lessequal for signal <n0049> created at line 120
-    Found 10-bit comparator lessequal for signal <n0053> created at line 120
-    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_37_o> created at line 136
-    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_43_o> created at line 141
-    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_49_o> created at line 146
-    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_56_o> created at line 156
-    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_62_o> created at line 161
-    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_73_o> created at line 176
-    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_79_o> created at line 181
-    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_85_o> created at line 186
-    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_92_o> created at line 196
-    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_98_o> created at line 201
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_27_OUT> created at line 131.
+    Found 11-bit subtractor for signal <GND_1_o_GND_1_o_sub_35_OUT> created at line 138.
+    Found 10-bit subtractor for signal <GND_1_o_GND_1_o_sub_36_OUT> created at line 138.
+    Found 10-bit adder for signal <n0292> created at line 130.
+    Found 32-bit adder for signal <n0238> created at line 131.
+    Found 10-bit adder for signal <n0298> created at line 137.
+    Found 32-bit adder for signal <n0243> created at line 138.
+    Found 8-bit adder for signal <jumpTime[7]_GND_1_o_add_46_OUT> created at line 155.
+    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_64_OUT> created at line 174.
+    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_70_OUT> created at line 179.
+    Found 9-bit adder for signal <Dino0_Y[8]_GND_1_o_add_76_OUT> created at line 184.
+    Found 8-bit adder for signal <jumpTime0[7]_GND_1_o_add_82_OUT> created at line 195.
+    Found 9-bit adder for signal <Dino1_Y[8]_GND_1_o_add_100_OUT> created at line 214.
+    Found 9-bit adder for signal <Dino1_Y[8]_GND_1_o_add_106_OUT> created at line 219.
+    Found 9-bit adder for signal <Dino1_Y[8]_GND_1_o_add_112_OUT> created at line 224.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_46_OUT<8:0>> created at line 154.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_52_OUT<8:0>> created at line 159.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_58_OUT<8:0>> created at line 164.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_82_OUT<8:0>> created at line 194.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_88_OUT<8:0>> created at line 199.
+    Found 9-bit subtractor for signal <GND_1_o_GND_1_o_sub_94_OUT<8:0>> created at line 204.
+    Found 8-bit comparator greater for signal <n0006> created at line 108
+    Found 8-bit comparator greater for signal <n0010> created at line 109
+    Found 9-bit comparator lessequal for signal <n0046> created at line 130
+    Found 10-bit comparator lessequal for signal <n0050> created at line 130
+    Found 10-bit comparator lessequal for signal <n0056> created at line 137
+    Found 10-bit comparator lessequal for signal <n0058> created at line 137
+    Found 9-bit comparator lessequal for signal <n0061> created at line 137
+    Found 10-bit comparator lessequal for signal <n0065> created at line 137
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_45_o> created at line 153
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_51_o> created at line 158
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_57_o> created at line 163
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_64_o> created at line 173
+    Found 8-bit comparator greater for signal <jumpTime[7]_GND_1_o_LessThan_70_o> created at line 178
+    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_81_o> created at line 193
+    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_87_o> created at line 198
+    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_93_o> created at line 203
+    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_100_o> created at line 213
+    Found 8-bit comparator greater for signal <jumpTime0[7]_GND_1_o_LessThan_106_o> created at line 218
     Summary:
 	inferred  11 Adder/Subtractor(s).
 	inferred  70 D-type flip-flop(s).
 	inferred  18 Comparator(s).
-	inferred  38 Multiplexer(s).
+	inferred  39 Multiplexer(s).
 Unit <Top> synthesized.
 
 Synthesizing Unit <clkdiv>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\clkdiv.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\clkdiv.v".
     Found 32-bit register for signal <clkdiv>.
     Found 32-bit adder for signal <clkdiv[31]_GND_2_o_add_0_OUT> created at line 32.
     Summary:
@@ -300,7 +320,7 @@ Synthesizing Unit <clkdiv>.
 Unit <clkdiv> synthesized.
 
 Synthesizing Unit <AntiJitter>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\AntiJitter.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\AntiJitter.v".
         WIDTH = 4
     Found 4-bit register for signal <cnt>.
     Found 1-bit register for signal <O>.
@@ -312,7 +332,7 @@ Synthesizing Unit <AntiJitter>.
 Unit <AntiJitter> synthesized.
 
 Synthesizing Unit <Keypad>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\Keypad.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Keypad.v".
     Found 4-bit register for signal <keyLineX>.
     Found 1-bit register for signal <state>.
     Found 5-bit register for signal <keyLineY>.
@@ -331,7 +351,7 @@ Synthesizing Unit <Keypad>.
 Unit <Keypad> synthesized.
 
 Synthesizing Unit <vgac>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\vgac.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\vgac.v".
     Found 10-bit register for signal <v_count>.
     Found 9-bit register for signal <row_addr>.
     Found 10-bit register for signal <col_addr>.
@@ -359,8 +379,100 @@ Synthesizing Unit <vgac>.
 	inferred   1 Multiplexer(s).
 Unit <vgac> synthesized.
 
+Synthesizing Unit <PS2_keyboard>.
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\PS2_keyboard.v".
+    Found 4-bit register for signal <num>.
+    Found 8-bit register for signal <temp_data>.
+    Found 10-bit register for signal <data>.
+    Found 1-bit register for signal <ps2_clk_flag1>.
+    Found 1-bit register for signal <ps2_clk_flag2>.
+    Found 1-bit register for signal <data_break>.
+    Found 1-bit register for signal <data_done>.
+    Found 1-bit register for signal <data_expand>.
+    Found 1-bit register for signal <ps2_clk_flag0>.
+    Found 1-bit register for signal <negedge_ps2_clk_shift>.
+    Found 4-bit adder for signal <num[3]_GND_15_o_add_1_OUT> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  29 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <PS2_keyboard> synthesized.
+
+Synthesizing Unit <Obstacle_layer>.
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Obstacle_layer.v".
+        min = 0
+        max = 5
+WARNING:Xst:647 - Input <clk_div<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_div<18:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_div<22:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_div<31:24>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <finish<5:1>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <start<0>>.
+    Found 8-bit register for signal <rand_num>.
+    Found 9-bit adder for signal <n0019> created at line 64.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Obstacle_layer> synthesized.
+
+Synthesizing Unit <mod_9u_3u>.
+    Related source file is "".
+    Found 12-bit adder for signal <GND_19_o_b[2]_add_1_OUT> created at line 0.
+    Found 11-bit adder for signal <GND_19_o_b[2]_add_3_OUT> created at line 0.
+    Found 10-bit adder for signal <GND_19_o_b[2]_add_5_OUT> created at line 0.
+    Found 9-bit adder for signal <a[8]_b[2]_add_7_OUT> created at line 0.
+    Found 9-bit adder for signal <a[8]_GND_19_o_add_9_OUT> created at line 0.
+    Found 9-bit adder for signal <a[8]_GND_19_o_add_11_OUT> created at line 0.
+    Found 9-bit adder for signal <a[8]_GND_19_o_add_13_OUT> created at line 0.
+    Found 9-bit adder for signal <a[8]_GND_19_o_add_15_OUT> created at line 0.
+    Found 9-bit adder for signal <a[8]_GND_19_o_add_17_OUT> created at line 0.
+    Found 9-bit adder for signal <a[8]_GND_19_o_add_19_OUT> created at line 0.
+    Found 12-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 11-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 10-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 9-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+	inferred  82 Multiplexer(s).
+Unit <mod_9u_3u> synthesized.
+
+Synthesizing Unit <Cactus_s>.
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Cactus_s.v".
+        HEIGHT = 49
+        LENGTH = 24
+        COLNUM = 640
+        ROW_HIGHEST = 160
+    Found 12-bit register for signal <count>.
+    Found 10-bit subtractor for signal <GND_20_o_GND_20_o_sub_4_OUT> created at line 57.
+    Found 12-bit adder for signal <count[11]_GND_20_o_add_1_OUT> created at line 54.
+    Found 32-bit adder for signal <n0052> created at line 57.
+    Found 32-bit adder for signal <GND_20_o_GND_20_o_add_6_OUT> created at line 57.
+    Found 13-bit adder for signal <n0042> created at line 71.
+    Found 16-bit subtractor for signal <addr[15]_GND_20_o_add_0_OUT> created at line 46.
+    Found 32x5-bit multiplier for signal <n0032> created at line 57.
+    Found 12-bit comparator greater for signal <finish_INV_186_o> created at line 62
+    Found 13-bit comparator lessequal for signal <n0011> created at line 71
+    Found 13-bit comparator greater for signal <BUS_0006_GND_20_o_LessThan_13_o> created at line 72
+    Found 9-bit comparator lessequal for signal <n0015> created at line 73
+    Found 9-bit comparator greater for signal <GND_20_o_row_addr[8]_LessThan_15_o> created at line 74
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <Cactus_s> synthesized.
+
 Synthesizing Unit <ScoreCounter>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\ScoreCounter.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ScoreCounter.v".
 WARNING:Xst:647 - Input <clk_div<23:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <clk_div<31:25>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <data<30>>.
@@ -395,21 +507,21 @@ WARNING:Xst:647 - Input <clk_div<31:25>> is never used. This port will be preser
     Found 1-bit register for signal <data<1>>.
     Found 1-bit register for signal <data<0>>.
     Found 1-bit register for signal <data<31>>.
-    Found 4-bit adder for signal <data[7]_GND_17_o_add_2_OUT> created at line 31.
-    Found 4-bit adder for signal <data[3]_GND_17_o_add_3_OUT> created at line 34.
-    Found 4-bit adder for signal <data[11]_GND_17_o_add_6_OUT> created at line 37.
-    Found 4-bit adder for signal <data[15]_GND_17_o_add_10_OUT> created at line 41.
-    Found 4-bit adder for signal <data[23]_GND_17_o_add_12_OUT> created at line 46.
-    Found 4-bit adder for signal <data[19]_GND_17_o_add_13_OUT> created at line 49.
-    Found 4-bit adder for signal <data[27]_GND_17_o_add_16_OUT> created at line 52.
-    Found 4-bit adder for signal <data[31]_GND_17_o_add_20_OUT> created at line 56.
+    Found 4-bit adder for signal <data[7]_GND_23_o_add_2_OUT> created at line 31.
+    Found 4-bit adder for signal <data[3]_GND_23_o_add_3_OUT> created at line 34.
+    Found 4-bit adder for signal <data[11]_GND_23_o_add_6_OUT> created at line 37.
+    Found 4-bit adder for signal <data[15]_GND_23_o_add_10_OUT> created at line 41.
+    Found 4-bit adder for signal <data[23]_GND_23_o_add_12_OUT> created at line 46.
+    Found 4-bit adder for signal <data[19]_GND_23_o_add_13_OUT> created at line 49.
+    Found 4-bit adder for signal <data[27]_GND_23_o_add_16_OUT> created at line 52.
+    Found 4-bit adder for signal <data[31]_GND_23_o_add_20_OUT> created at line 56.
     Summary:
 	inferred   8 Adder/Subtractor(s).
 	inferred  32 D-type flip-flop(s).
 Unit <ScoreCounter> synthesized.
 
 Synthesizing Unit <Seg7Device>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\Seg7Device.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Seg7Device.v".
     Found 4x4-bit Read Only RAM for signal <anode>
     Found 8-bit 4-to-1 multiplexer for signal <segment> created at line 36.
     Summary:
@@ -418,32 +530,32 @@ Synthesizing Unit <Seg7Device>.
 Unit <Seg7Device> synthesized.
 
 Synthesizing Unit <Seg7Decode>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\Seg7Decode.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Seg7Decode.v".
     Summary:
 	no macro.
 Unit <Seg7Decode> synthesized.
 
 Synthesizing Unit <SegmentDecoder>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\SegmentDecoder.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\SegmentDecoder.v".
     Found 16x7-bit Read Only RAM for signal <segment>
     Summary:
 	inferred   1 RAM(s).
 Unit <SegmentDecoder> synthesized.
 
 Synthesizing Unit <Seg7Remap>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\Seg7Remap.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Seg7Remap.v".
     Summary:
 	no macro.
 Unit <Seg7Remap> synthesized.
 
 Synthesizing Unit <ShiftReg>.
-    Related source file is "F:\ZJU\2019aut-win\LCDF\Dinosaur\ShiftReg.v".
+    Related source file is "C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\ShiftReg.v".
         WIDTH = 64
         DELAY = 12
     Found 1-bit register for signal <oe>.
     Found 12-bit register for signal <counter>.
     Found 65-bit register for signal <shift>.
-    Found 12-bit adder for signal <counter[11]_GND_22_o_add_5_OUT> created at line 54.
+    Found 12-bit adder for signal <counter[11]_GND_28_o_add_5_OUT> created at line 54.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  78 D-type flip-flop(s).
@@ -457,38 +569,52 @@ Macro Statistics
 # RAMs                                                 : 9
  16x7-bit single-port Read Only RAM                    : 8
  4x4-bit single-port Read Only RAM                     : 1
-# Adders/Subtractors                                   : 27
- 10-bit adder                                          : 4
- 10-bit subtractor                                     : 3
+# Multipliers                                          : 1
+ 32x5-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 46
+ 10-bit adder                                          : 5
+ 10-bit subtractor                                     : 4
+ 11-bit adder                                          : 1
  11-bit subtractor                                     : 1
- 12-bit adder                                          : 1
- 32-bit adder                                          : 3
- 4-bit adder                                           : 8
- 4-bit addsub                                          : 2
+ 12-bit adder                                          : 3
+ 13-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 32-bit adder                                          : 5
+ 4-bit adder                                           : 9
+ 4-bit addsub                                          : 3
  8-bit adder                                           : 2
+ 9-bit adder                                           : 8
  9-bit addsub                                          : 2
  9-bit subtractor                                      : 1
-# Registers                                            : 40
- 1-bit register                                        : 12
- 10-bit register                                       : 3
- 12-bit register                                       : 2
+# Registers                                            : 55
+ 1-bit register                                        : 21
+ 10-bit register                                       : 4
+ 12-bit register                                       : 3
  19-bit register                                       : 1
  32-bit register                                       : 1
- 4-bit register                                        : 14
+ 4-bit register                                        : 16
  5-bit register                                        : 1
  65-bit register                                       : 1
- 8-bit register                                        : 2
+ 8-bit register                                        : 4
  9-bit register                                        : 3
-# Comparators                                          : 24
+# Comparators                                          : 39
  10-bit comparator greater                             : 6
- 10-bit comparator lessequal                           : 4
+ 10-bit comparator lessequal                           : 5
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator greater                             : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator greater                             : 1
+ 13-bit comparator lessequal                           : 1
  8-bit comparator greater                              : 12
- 9-bit comparator lessequal                            : 2
-# Multiplexers                                         : 41
- 1-bit 2-to-1 multiplexer                              : 12
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 10
+# Multiplexers                                         : 128
+ 1-bit 2-to-1 multiplexer                              : 94
  10-bit 2-to-1 multiplexer                             : 1
- 12-bit 2-to-1 multiplexer                             : 3
+ 12-bit 2-to-1 multiplexer                             : 6
  19-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 1
  65-bit 2-to-1 multiplexer                             : 1
  8-bit 2-to-1 multiplexer                              : 12
  8-bit 4-to-1 multiplexer                              : 1
@@ -505,10 +631,18 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 
 Reading core <ipcore_dir/DinoL.ngc>.
 Reading core <ipcore_dir/DinoR.ngc>.
+Reading core <ipcore_dir/Cactus_s_ip.ngc>.
 Loading core <DinoL> for timing and area information for instance <DinoL>.
 Loading core <DinoR> for timing and area information for instance <DinoR>.
+Loading core <Cactus_s_ip> for timing and area information for instance <CACTUS>.
 WARNING:Xst:1290 - Hierarchical block <U1> is unconnected in block <segDevice>.
    It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <rand_num_3> in Unit <OLAYER> is equivalent to the following 4 FFs/Latches, which will be removed : <rand_num_4> <rand_num_5> <rand_num_6> <rand_num_7> 
+WARNING:Xst:1710 - FF/Latch <rand_num_3> (without init value) has a constant value of 0 in block <OLAYER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <data_break> of sequential type is unconnected in block <ps2>.
+WARNING:Xst:2677 - Node <data_expand> of sequential type is unconnected in block <ps2>.
+WARNING:Xst:2677 - Node <data_8> of sequential type is unconnected in block <ps2>.
+WARNING:Xst:2677 - Node <data_9> of sequential type is unconnected in block <ps2>.
 WARNING:Xst:2677 - Node <Dino0_12> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <Dino0_13> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <Dino0_14> of sequential type is unconnected in block <Top>.
@@ -516,10 +650,19 @@ WARNING:Xst:2677 - Node <Dino0_15> of sequential type is unconnected in block <T
 WARNING:Xst:2677 - Node <Dino0_16> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <Dino0_17> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <Dino0_18> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2404 -  FFs/Latches <rand_num<7:3>> (without init value) have a constant value of 0 in block <Obstacle_layer>.
 
 Synthesizing (advanced) Unit <AntiJitter>.
 The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
 Unit <AntiJitter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Cactus_s>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Cactus_s> synthesized (advanced).
+
+Synthesizing (advanced) Unit <PS2_keyboard>.
+The following registers are absorbed into counter <num>: 1 register on signal <num>.
+Unit <PS2_keyboard> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ScoreCounter>.
 The following registers are absorbed into counter <data<16>_data<17>_data<18>_data<19>>: 1 register on signal <data<16>_data<17>_data<18>_data<19>>.
@@ -592,32 +735,46 @@ Macro Statistics
 # RAMs                                                 : 9
  16x7-bit single-port distributed Read Only RAM        : 8
  4x4-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 11
+# Multipliers                                          : 1
+ 32x5-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 27
  10-bit adder                                          : 2
- 10-bit subtractor                                     : 3
+ 10-bit subtractor                                     : 4
  11-bit subtractor                                     : 1
+ 13-bit adder                                          : 1
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 1
  19-bit adder                                          : 2
+ 3-bit adder                                           : 1
  8-bit adder                                           : 2
+ 9-bit adder                                           : 10
  9-bit subtractor                                      : 1
-# Counters                                             : 14
+# Counters                                             : 17
  10-bit up counter                                     : 2
- 12-bit up counter                                     : 1
+ 12-bit up counter                                     : 2
  32-bit up counter                                     : 1
- 4-bit up counter                                      : 8
- 4-bit updown counter                                  : 2
+ 4-bit up counter                                      : 9
+ 4-bit updown counter                                  : 3
 # Accumulators                                         : 2
  9-bit updown accumulator                              : 2
-# Registers                                            : 157
- Flip-Flops                                            : 157
-# Comparators                                          : 24
+# Registers                                            : 187
+ Flip-Flops                                            : 187
+# Comparators                                          : 39
  10-bit comparator greater                             : 6
- 10-bit comparator lessequal                           : 4
+ 10-bit comparator lessequal                           : 5
+ 11-bit comparator lessequal                           : 1
+ 12-bit comparator greater                             : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator greater                             : 1
+ 13-bit comparator lessequal                           : 1
  8-bit comparator greater                              : 12
- 9-bit comparator lessequal                            : 2
-# Multiplexers                                         : 104
- 1-bit 2-to-1 multiplexer                              : 77
- 12-bit 2-to-1 multiplexer                             : 3
+ 9-bit comparator greater                              : 1
+ 9-bit comparator lessequal                            : 10
+# Multiplexers                                         : 189
+ 1-bit 2-to-1 multiplexer                              : 158
+ 12-bit 2-to-1 multiplexer                             : 6
  19-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 12
  8-bit 4-to-1 multiplexer                              : 1
  9-bit 2-to-1 multiplexer                              : 10
@@ -627,10 +784,19 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:2677 - Node <Mmult_n00321> of sequential type is unconnected in block <Cactus_s>.
 
 Optimizing unit <Top> ...
-WARNING:Xst:1293 - FF/Latch <Dino0_Y_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Dino1_Y_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch jumpTime_7 hinder the constant cleaning in the block Top.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch jumpTime0_7 hinder the constant cleaning in the block Top.
+   You should achieve better results by setting this init to 0.
+
+Optimizing unit <PS2_keyboard> ...
+
+Optimizing unit <Obstacle_layer> ...
+
+Optimizing unit <Cactus_s> ...
 
 Optimizing unit <ScoreCounter> ...
 
@@ -646,9 +812,13 @@ WARNING:Xst:2677 - Node <clk0/clkdiv_28> of sequential type is unconnected in bl
 WARNING:Xst:2677 - Node <clk0/clkdiv_29> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <clk0/clkdiv_30> of sequential type is unconnected in block <Top>.
 WARNING:Xst:2677 - Node <clk0/clkdiv_31> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <ps2/data_9> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <ps2/data_8> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <ps2/data_break> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <ps2/data_expand> of sequential type is unconnected in block <Top>.
 WARNING:Xst:1293 - FF/Latch <Dino0_Y_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Dino1_Y_0> has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:3203 - The FF/Latch <DinoLeg> in Unit <Top> is the opposite to the following FF/Latch, which will be removed : <DinoLeg0> 
+INFO:Xst:3203 - The FF/Latch <DinoLeg0> in Unit <Top> is the opposite to the following FF/Latch, which will be removed : <DinoLeg> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -660,8 +830,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 269
- Flip-Flops                                            : 269
+# Registers                                            : 315
+ Flip-Flops                                            : 315
 
 =========================================================================
 
@@ -684,35 +854,39 @@ Top Level Output File Name         : Top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 687
-#      GND                         : 3
-#      INV                         : 23
-#      LUT1                        : 44
-#      LUT2                        : 55
-#      LUT3                        : 42
-#      LUT4                        : 99
-#      LUT5                        : 64
-#      LUT6                        : 151
-#      MUXCY                       : 113
-#      MUXF7                       : 1
-#      VCC                         : 3
-#      XORCY                       : 89
-# FlipFlops/Latches                : 269
-#      FD                          : 78
-#      FDCE                        : 10
-#      FDE                         : 119
-#      FDR                         : 30
+# BELS                             : 949
+#      GND                         : 4
+#      INV                         : 36
+#      LUT1                        : 67
+#      LUT2                        : 73
+#      LUT3                        : 53
+#      LUT4                        : 106
+#      LUT5                        : 66
+#      LUT6                        : 210
+#      MUXCY                       : 161
+#      MUXF7                       : 18
+#      MUXF8                       : 9
+#      VCC                         : 4
+#      XORCY                       : 142
+# FlipFlops/Latches                : 319
+#      FD                          : 57
+#      FDC                         : 16
+#      FDCE                        : 30
+#      FDE                         : 139
+#      FDR                         : 45
 #      FDRE                        : 32
-# RAMS                             : 4
+# RAMS                             : 26
 #      RAMB18E1                    : 2
-#      RAMB36E1                    : 2
+#      RAMB36E1                    : 24
 # Clock Buffers                    : 5
 #      BUFG                        : 4
 #      BUFGP                       : 1
-# IO Buffers                       : 28
-#      IBUF                        : 1
+# IO Buffers                       : 31
+#      IBUF                        : 4
 #      IOBUF                       : 9
 #      OBUF                        : 18
+# DSPs                             : 1
+#      DSP48E1                     : 1
 
 Device utilization summary:
 ---------------------------
@@ -721,25 +895,26 @@ Selected Device : 7k160tfbg676-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             269  out of  202800     0%  
- Number of Slice LUTs:                  478  out of  101400     0%  
-    Number used as Logic:               478  out of  101400     0%  
+ Number of Slice Registers:             319  out of  202800     0%  
+ Number of Slice LUTs:                  611  out of  101400     0%  
+    Number used as Logic:               611  out of  101400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    494
-   Number with an unused Flip Flop:     225  out of    494    45%  
-   Number with an unused LUT:            16  out of    494     3%  
-   Number of fully used LUT-FF pairs:   253  out of    494    51%  
-   Number of unique control sets:        24
+ Number of LUT Flip Flop pairs used:    642
+   Number with an unused Flip Flop:     323  out of    642    50%  
+   Number with an unused LUT:            31  out of    642     4%  
+   Number of fully used LUT-FF pairs:   288  out of    642    44%  
+   Number of unique control sets:        35
 
 IO Utilization: 
- Number of IOs:                          45
- Number of bonded IOBs:                  29  out of    400     7%  
+ Number of IOs:                          47
+ Number of bonded IOBs:                  32  out of    400     8%  
 
 Specific Feature Utilization:
- Number of Block RAM/FIFO:                3  out of    325     0%  
-    Number using Block RAM only:          3
+ Number of Block RAM/FIFO:               25  out of    325     7%  
+    Number using Block RAM only:         25
  Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
+ Number of DSP48E1s:                      1  out of    600     0%  
 
 ---------------------------
 Partition Resource Summary:
@@ -759,31 +934,41 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 85    |
-clk0/clkdiv_15                     | BUFG                   | 20    |
-clk0/clkdiv_24                     | BUFG                   | 32    |
-clk0/clkdiv_1                      | BUFG                   | 58    |
-clk0/clkdiv_3                      | BUFG                   | 78    |
------------------------------------+------------------------+-------+
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+clk                                | BUFGP                       | 110   |
+clk0/clkdiv_15                     | BUFG                        | 25    |
+clk0/clkdiv_23                     | NONE(OLAYER/rand_num_2)     | 4     |
+clk0/clkdiv_19                     | NONE(OLAYER/layer1/count_11)| 12    |
+clk0/clkdiv_24                     | BUFG                        | 32    |
+clk0/clkdiv_1                      | BUFG                        | 84    |
+clk0/clkdiv_3                      | BUFG                        | 78    |
+-----------------------------------+-----------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
-Control Signal                     | Buffer(FF name)                                                                                                                            | Load  |
------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
-DinoL/N1(DinoL/XST_GND:G)          | NONE(DinoL/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 2     |
-DinoR/N1(DinoR/XST_GND:G)          | NONE(DinoR/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 2     |
------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                                                             | Buffer(FF name)                                                                                                                                                | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+OLAYER/layer1/CACTUS/N1(OLAYER/layer1/CACTUS/XST_GND:G)                                                                                                                                                                                                                                                    | NONE(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)     | 38    |
+DinoL/N1(DinoL/XST_GND:G)                                                                                                                                                                                                                                                                                  | NONE(DinoL/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)                    | 2     |
+DinoR/N1(DinoR/XST_GND:G)                                                                                                                                                                                                                                                                                  | NONE(DinoR/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)                    | 2     |
+OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/cascadelata_tmp(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/cascadelatb_tmp(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/cascadelata_tmp(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/cascadelatb_tmp(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[17].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_init.ram/cascadelata_tmp(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_init.ram/cascadelatb_tmp(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[18].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)| 1     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 4.169ns (Maximum Frequency: 239.866MHz)
-   Minimum input arrival time before clock: 1.424ns
+   Minimum period: 7.810ns (Maximum Frequency: 128.041MHz)
+   Minimum input arrival time before clock: 1.374ns
    Maximum output required time after clock: 2.766ns
    Maximum combinational path delay: No path found
 
@@ -793,111 +978,178 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.169ns (frequency: 239.866MHz)
-  Total number of paths / destination ports: 17525 / 132
+  Clock period: 5.710ns (frequency: 175.131MHz)
+  Total number of paths / destination ports: 8834 / 198
 -------------------------------------------------------------------------
-Delay:               4.169ns (Levels of Logic = 6)
-  Source:            jumpTime_3 (FF)
-  Destination:       Dino0_Y_8 (FF)
+Delay:               5.710ns (Levels of Logic = 7)
+  Source:            Dino0_Y_5 (FF)
+  Destination:       vga_data_0 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: jumpTime_3 to Dino0_Y_8
+  Data Path: Dino0_Y_5 to vga_data_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             8   0.282   0.771  jumpTime_3 (jumpTime_3)
-     LUT5:I0->O            5   0.053   0.440  jumpTime[7]_GND_1_o_LessThan_62_o11 (jumpTime[7]_GND_1_o_LessThan_62_o11)
-     LUT5:I4->O           12   0.053   0.674  clk_div[19]_jumpTime[7]_AND_64_o1 (clk_div[19]_jumpTime[7]_AND_64_o)
-     LUT5:I2->O            4   0.053   0.622  Maccum_Dino0_Y_lut<2>1 (Maccum_Dino0_Y_lut<2>)
-     LUT6:I3->O            2   0.053   0.419  Maccum_Dino0_Y_cy<5>12_SW0 (N83)
-     LUT5:I4->O            2   0.053   0.405  Maccum_Dino0_Y_cy<5>12 (Maccum_Dino0_Y_cy<5>)
-     MUXF7:S->O            1   0.280   0.000  Maccum_Dino0_Y_xor<8>11 (Result<8>1)
-     FDE:D                     0.011          Dino0_Y_8
+     FDE:C->Q              8   0.282   0.771  Dino0_Y_5 (Dino0_Y_5)
+     LUT5:I0->O            2   0.053   0.419  Madd_n0292_xor<8>111 (Madd_n0292_xor<8>11)
+     LUT3:I2->O            2   0.053   0.641  Madd_n0292_xor<7>11 (n0292<7>)
+     LUT4:I0->O            0   0.053   0.000  Mcompar_GND_1_o_BUS_0001_LessThan_25_o_lutdi3 (Mcompar_GND_1_o_BUS_0001_LessThan_25_o_lutdi3)
+     MUXCY:DI->O           1   0.441   0.413  Mcompar_GND_1_o_BUS_0001_LessThan_25_o_cy<3> (Mcompar_GND_1_o_BUS_0001_LessThan_25_o_cy<3>)
+     LUT6:I5->O           14   0.053   0.810  Mcompar_GND_1_o_BUS_0001_LessThan_25_o_cy<4> (GND_1_o_BUS_0001_LessThan_25_o)
+     LUT6:I1->O           13   0.053   0.819  GND_1_o_GND_1_o_AND_1081_o1 (GND_1_o_GND_1_o_AND_1081_o)
+     LUT6:I0->O           12   0.053   0.471  _n0425 (_n0425)
+     FDR:R                     0.325          vga_data_0
     ----------------------------------------
-    Total                      4.169ns (0.838ns logic, 3.331ns route)
-                                       (20.1% logic, 79.9% route)
+    Total                      5.710ns (1.366ns logic, 4.344ns route)
+                                       (23.9% logic, 76.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk0/clkdiv_15'
-  Clock period: 3.192ns (frequency: 313.283MHz)
-  Total number of paths / destination ports: 144 / 28
+  Clock period: 3.142ns (frequency: 318.269MHz)
+  Total number of paths / destination ports: 196 / 37
 -------------------------------------------------------------------------
-Delay:               3.192ns (Levels of Logic = 3)
+Delay:               3.142ns (Levels of Logic = 4)
   Source:            k0/keyLineX_3 (FF)
-  Destination:       k0/rdyFilter/cnt_3 (FF)
+  Destination:       k0/rdyFilter/O (FF)
   Source Clock:      clk0/clkdiv_15 rising
   Destination Clock: clk0/clkdiv_15 rising
 
-  Data Path: k0/keyLineX_3 to k0/rdyFilter/cnt_3
+  Data Path: k0/keyLineX_3 to k0/rdyFilter/O
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              2   0.282   0.641  k0/keyLineX_3 (k0/keyLineX_3)
-     LUT4:I0->O            1   0.053   0.739  k0/ready_raw_SW0 (N29)
-     LUT6:I0->O            5   0.053   0.752  k0/ready_raw (k0/ready_raw)
-     LUT5:I0->O            4   0.053   0.419  k0/rdyFilter/_n0031_inv1 (k0/rdyFilter/_n0031_inv)
-     FDE:CE                    0.200          k0/rdyFilter/cnt_0
+     LUT4:I0->O            1   0.053   0.739  k0/ready_raw_SW0 (N12)
+     LUT6:I0->O            6   0.053   0.772  k0/ready_raw (k0/ready_raw)
+     LUT6:I0->O            1   0.053   0.485  k0/rdyFilter/O_glue_set (k0/rdyFilter/O_glue_set)
+     LUT2:I0->O            1   0.053   0.000  k0/rdyFilter/O_rstpot (k0/rdyFilter/O_rstpot)
+     FD:D                      0.011          k0/rdyFilter/O
     ----------------------------------------
-    Total                      3.192ns (0.641ns logic, 2.551ns route)
-                                       (20.1% logic, 79.9% route)
+    Total                      3.142ns (0.505ns logic, 2.637ns route)
+                                       (16.1% logic, 83.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk0/clkdiv_23'
+  Clock period: 2.356ns (frequency: 424.448MHz)
+  Total number of paths / destination ports: 19 / 7
+-------------------------------------------------------------------------
+Delay:               2.356ns (Levels of Logic = 2)
+  Source:            OLAYER/rand_num_1 (FF)
+  Destination:       OLAYER/rand_num_2 (FF)
+  Source Clock:      clk0/clkdiv_23 rising
+  Destination Clock: clk0/clkdiv_23 rising
+
+  Data Path: OLAYER/rand_num_1 to OLAYER/rand_num_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.282   0.505  OLAYER/rand_num_1 (OLAYER/rand_num_1)
+     LUT2:I0->O            1   0.053   0.725  OLAYER/Mmux_rand_num[2]_X_18_o_Mux_1_o1_SW0 (N54)
+     LUT6:I1->O            3   0.053   0.413  OLAYER/Mmux_rand_num[2]_X_18_o_Mux_1_o1 (OLAYER/rand_num[2]_X_18_o_Mux_1_o)
+     FDR:R                     0.325          OLAYER/rand_num_0
+    ----------------------------------------
+    Total                      2.356ns (0.713ns logic, 1.643ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk0/clkdiv_19'
+  Clock period: 1.540ns (frequency: 649.351MHz)
+  Total number of paths / destination ports: 78 / 12
+-------------------------------------------------------------------------
+Delay:               1.540ns (Levels of Logic = 13)
+  Source:            OLAYER/layer1/count_0 (FF)
+  Destination:       OLAYER/layer1/count_11 (FF)
+  Source Clock:      clk0/clkdiv_19 rising
+  Destination Clock: clk0/clkdiv_19 rising
+
+  Data Path: OLAYER/layer1/count_0 to OLAYER/layer1/count_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.282   0.419  OLAYER/layer1/count_0 (OLAYER/layer1/count_0)
+     INV:I->O              1   0.067   0.000  OLAYER/layer1/Mcount_count_lut<0>_INV_0 (OLAYER/layer1/Mcount_count_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  OLAYER/layer1/Mcount_count_cy<0> (OLAYER/layer1/Mcount_count_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<1> (OLAYER/layer1/Mcount_count_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<2> (OLAYER/layer1/Mcount_count_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<3> (OLAYER/layer1/Mcount_count_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<4> (OLAYER/layer1/Mcount_count_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<5> (OLAYER/layer1/Mcount_count_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<6> (OLAYER/layer1/Mcount_count_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<7> (OLAYER/layer1/Mcount_count_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<8> (OLAYER/layer1/Mcount_count_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Mcount_count_cy<9> (OLAYER/layer1/Mcount_count_cy<9>)
+     MUXCY:CI->O           0   0.015   0.000  OLAYER/layer1/Mcount_count_cy<10> (OLAYER/layer1/Mcount_count_cy<10>)
+     XORCY:CI->O           1   0.320   0.000  OLAYER/layer1/Mcount_count_xor<11> (OLAYER/layer1/Result<11>)
+     FDC:D                     0.011          OLAYER/layer1/count_11
+    ----------------------------------------
+    Total                      1.540ns (1.121ns logic, 0.419ns route)
+                                       (72.8% logic, 27.2% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk0/clkdiv_24'
-  Clock period: 2.475ns (frequency: 404.040MHz)
+  Clock period: 2.435ns (frequency: 410.678MHz)
   Total number of paths / destination ports: 464 / 80
 -------------------------------------------------------------------------
-Delay:               2.475ns (Levels of Logic = 2)
-  Source:            Score0/data<3:0>_2 (FF)
-  Destination:       Score0/data<4>_data<5>_data<6>_data<7>_0 (FF)
+Delay:               2.435ns (Levels of Logic = 2)
+  Source:            Score0/data<8>_data<9>_data<10>_data<11>_0 (FF)
+  Destination:       Score0/data<8>_data<9>_data<10>_data<11>_0 (FF)
   Source Clock:      clk0/clkdiv_24 rising
   Destination Clock: clk0/clkdiv_24 rising
 
-  Data Path: Score0/data<3:0>_2 to Score0/data<4>_data<5>_data<6>_data<7>_0
+  Data Path: Score0/data<8>_data<9>_data<10>_data<11>_0 to Score0/data<8>_data<9>_data<10>_data<11>_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             13   0.282   0.682  Score0/data<3:0>_2 (Score0/data<3:0>_2)
-     LUT3:I0->O            1   0.053   0.635  Score0/data[7]_data[3]_AND_8_o1_SW0 (N35)
-     LUT6:I2->O            8   0.053   0.445  Score0/data[7]_data[3]_AND_8_o1 (Score0/data[7]_data[3]_AND_8_o)
-     FDRE:R                    0.325          Score0/data<4>_data<5>_data<6>_data<7>_3
+     FDRE:C->Q             9   0.282   0.792  Score0/data<8>_data<9>_data<10>_data<11>_0 (Score0/data<8>_data<9>_data<10>_data<11>_0)
+     LUT6:I0->O            1   0.053   0.485  Score0/data[11]_data[3]_AND_1047_o11 (Score0/data[11]_data[3]_AND_1047_o1)
+     LUT2:I0->O            8   0.053   0.445  Score0/data[11]_data[3]_AND_1047_o13 (Score0/data[11]_data[3]_AND_1047_o)
+     FDRE:R                    0.325          Score0/data<8>_data<9>_data<10>_data<11>_3
     ----------------------------------------
-    Total                      2.475ns (0.713ns logic, 1.762ns route)
-                                       (28.8% logic, 71.2% route)
+    Total                      2.435ns (0.713ns logic, 1.722ns route)
+                                       (29.3% logic, 70.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk0/clkdiv_1'
-  Clock period: 3.265ns (frequency: 306.279MHz)
-  Total number of paths / destination ports: 1135 / 74
+  Clock period: 7.810ns (frequency: 128.041MHz)
+  Total number of paths / destination ports: 71363 / 78
 -------------------------------------------------------------------------
-Delay:               3.265ns (Levels of Logic = 13)
-  Source:            vga/v_count_5 (FF)
-  Destination:       vga/v_count_9 (FF)
+Delay:               7.810ns (Levels of Logic = 21)
+  Source:            vga/row_addr_8 (FF)
+  Destination:       OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_3 (FF)
   Source Clock:      clk0/clkdiv_1 rising
   Destination Clock: clk0/clkdiv_1 rising
 
-  Data Path: vga/v_count_5 to vga/v_count_9
+  Data Path: vga/row_addr_8 to OLAYER/layer1/CACTUS/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             9   0.282   0.778  vga/v_count_5 (vga/v_count_5)
-     LUT5:I0->O            3   0.053   0.649  vga/v_count[9]_PWR_6_o_equal_8_o<9>_SW0 (N39)
-     LUT6:I2->O            9   0.053   0.655  vga/v_count[9]_PWR_6_o_equal_8_o<9> (vga/v_count[9]_PWR_6_o_equal_8_o)
-     LUT3:I0->O            1   0.053   0.000  vga/Mcount_v_count_lut<0> (vga/Mcount_v_count_lut<0>)
-     MUXCY:S->O            1   0.291   0.000  vga/Mcount_v_count_cy<0> (vga/Mcount_v_count_cy<0>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<1> (vga/Mcount_v_count_cy<1>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<2> (vga/Mcount_v_count_cy<2>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<3> (vga/Mcount_v_count_cy<3>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<4> (vga/Mcount_v_count_cy<4>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<5> (vga/Mcount_v_count_cy<5>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<6> (vga/Mcount_v_count_cy<6>)
-     MUXCY:CI->O           1   0.015   0.000  vga/Mcount_v_count_cy<7> (vga/Mcount_v_count_cy<7>)
-     MUXCY:CI->O           0   0.015   0.000  vga/Mcount_v_count_cy<8> (vga/Mcount_v_count_cy<8>)
-     XORCY:CI->O           1   0.320   0.000  vga/Mcount_v_count_xor<9> (vga/Mcount_v_count9)
-     FDCE:D                    0.011          vga/v_count_9
+     FD:C->Q              10   0.282   0.784  vga/row_addr_8 (vga/row_addr_8)
+     LUT5:I0->O            8   0.053   0.445  OLAYER/layer1/Msub_GND_20_o_GND_20_o_sub_4_OUT_xor<9>11 (OLAYER/layer1/GND_20_o_GND_20_o_sub_4_OUT<9>)
+     DSP48E1:A9->P1        2   3.255   0.608  OLAYER/layer1/Mmult_n0032 (OLAYER/layer1/n0032<1>)
+     LUT3:I0->O            1   0.053   0.413  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd1 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd1)
+     LUT4:I3->O            1   0.053   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_lut<0>2 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_lut<0>2)
+     MUXCY:S->O            1   0.291   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_1 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>2)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_2 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>3)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_3 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>4)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_4 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>5)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_5 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>6)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_6 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>7)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_7 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>8)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_8 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>9)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_9 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>10)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_10 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>11)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_11 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>12)
+     MUXCY:CI->O           1   0.015   0.000  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>_12 (OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_cy<0>13)
+     XORCY:CI->O           1   0.320   0.399  OLAYER/layer1/Madd_GND_20_o_GND_20_o_add_6_OUT_Madd_xor<0>_13 (OLAYER/layer1/GND_20_o_GND_20_o_add_6_OUT<14>)
+     INV:I->O              1   0.067   0.000  OLAYER/layer1/Msub_addr[15]_GND_20_o_add_0_OUT_lut<14>_INV_0 (OLAYER/layer1/Msub_addr[15]_GND_20_o_add_0_OUT_lut<14>)
+     MUXCY:S->O            0   0.291   0.000  OLAYER/layer1/Msub_addr[15]_GND_20_o_add_0_OUT_cy<14> (OLAYER/layer1/Msub_addr[15]_GND_20_o_add_0_OUT_cy<14>)
+     XORCY:CI->O          23   0.320   0.000  OLAYER/layer1/Msub_addr[15]_GND_20_o_add_0_OUT_xor<15> (OLAYER/layer1/addr[15]_GND_20_o_add_0_OUT<15>)
+     begin scope: 'OLAYER/layer1/CACTUS:addra<15>'
+     FDE:D                     0.011          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe_3
     ----------------------------------------
-    Total                      3.265ns (1.183ns logic, 2.082ns route)
-                                       (36.2% logic, 63.8% route)
+    Total                      7.810ns (5.161ns logic, 2.649ns route)
+                                       (66.1% logic, 33.9% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk0/clkdiv_3'
@@ -934,23 +1186,44 @@ Delay:               3.054ns (Levels of Logic = 12)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk0/clkdiv_15'
-  Total number of paths / destination ports: 17 / 17
+  Total number of paths / destination ports: 27 / 25
 -------------------------------------------------------------------------
-Offset:              1.424ns (Levels of Logic = 2)
-  Source:            SW<0> (PAD)
-  Destination:       a0<0>/cnt_0 (FF)
+Offset:              1.374ns (Levels of Logic = 3)
+  Source:            SW<15> (PAD)
+  Destination:       a0<15>/O (FF)
   Destination Clock: clk0/clkdiv_15 rising
 
-  Data Path: SW<0> to a0<0>/cnt_0
+  Data Path: SW<15> to a0<15>/O
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             5   0.000   0.752  SW_0_IBUF (SW_0_IBUF)
-     LUT5:I0->O            4   0.053   0.419  a0<0>/_n0031_inv1 (a0<0>/_n0031_inv)
-     FDE:CE                    0.200          a0<0>/cnt_0
+     IBUF:I->O             6   0.000   0.772  SW_15_IBUF (SW_15_IBUF)
+     LUT6:I0->O            1   0.053   0.485  a0<15>/O_glue_set (a0<15>/O_glue_set)
+     LUT2:I0->O            1   0.053   0.000  a0<15>/O_rstpot (a0<15>/O_rstpot)
+     FD:D                      0.011          a0<15>/O
     ----------------------------------------
-    Total                      1.424ns (0.253ns logic, 1.171ns route)
-                                       (17.8% logic, 82.2% route)
+    Total                      1.374ns (0.117ns logic, 1.257ns route)
+                                       (8.5% logic, 91.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              0.523ns (Levels of Logic = 2)
+  Source:            ps2_data (PAD)
+  Destination:       ps2/temp_data_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ps2_data to ps2/temp_data_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.000   0.459  ps2_data_IBUF (ps2_data_IBUF)
+     LUT6:I5->O            1   0.053   0.000  ps2/num[3]_temp_data[7]_select_15_OUT<5>1 (ps2/num[3]_temp_data[7]_select_15_OUT<5>)
+     FDCE:D                    0.011          ps2/temp_data_5
+    ----------------------------------------
+    Total                      0.523ns (0.064ns logic, 0.459ns route)
+                                       (12.2% logic, 87.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk0/clkdiv_1'
@@ -1052,9 +1325,10 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.169|         |         |         |
-clk0/clkdiv_1  |    3.688|         |         |         |
-clk0/clkdiv_15 |    3.554|         |         |         |
+clk            |    5.710|         |         |         |
+clk0/clkdiv_1  |    4.555|         |         |         |
+clk0/clkdiv_15 |    3.341|         |         |         |
+clk0/clkdiv_19 |    4.155|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk0/clkdiv_1
@@ -1062,9 +1336,10 @@ Clock to Setup on destination clock clk0/clkdiv_1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.200|         |         |         |
-clk0/clkdiv_1  |    3.265|         |         |         |
+clk            |    1.180|         |         |         |
+clk0/clkdiv_1  |    7.810|         |         |         |
 clk0/clkdiv_15 |    1.617|         |         |         |
+clk0/clkdiv_19 |    3.302|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk0/clkdiv_15
@@ -1072,7 +1347,25 @@ Clock to Setup on destination clock clk0/clkdiv_15
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk0/clkdiv_15 |    3.192|         |         |         |
+clk0/clkdiv_15 |    3.142|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk0/clkdiv_19
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk0/clkdiv_19 |    1.540|         |         |         |
+clk0/clkdiv_23 |    1.078|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk0/clkdiv_23
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk0/clkdiv_19 |    2.383|         |         |         |
+clk0/clkdiv_23 |    2.356|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk0/clkdiv_24
@@ -1080,7 +1373,7 @@ Clock to Setup on destination clock clk0/clkdiv_24
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk0/clkdiv_24 |    2.475|         |         |         |
+clk0/clkdiv_24 |    2.435|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk0/clkdiv_3
@@ -1095,14 +1388,14 @@ clk0/clkdiv_3  |    3.054|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.10 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 12.90 secs
  
 --> 
 
-Total memory usage is 4628300 kilobytes
+Total memory usage is 4646028 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   71 (   0 filtered)
-Number of infos    :   23 (   0 filtered)
+Number of warnings :   92 (   0 filtered)
+Number of infos    :   24 (   0 filtered)
 

@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.ncd
-OUTFILE=F:\ZJU\2019aut-win\LCDF\Dinosaur\Top.bit
+INFILE=C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.ncd
+OUTFILE=C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur\Top.bit
 FAMILY=Kintex7
 PART=xc7k160t-1fbg676
-WORKINGDIR=F:\ZJU\2019aut-win\LCDF\Dinosaur
+WORKINGDIR=C:\Users\Dell\Desktop\Digital_logic_design-Chrome_Dino\Dinosaur
 LICENSE=WebPack
 USER_INFO=__0_0_0

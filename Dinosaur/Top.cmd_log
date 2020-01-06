@@ -327,3 +327,36 @@ map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
 trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
 bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.xst" -ofn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7k160t-fbg676-1 Top.ngc Top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.xst" -ofn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.xst" -ofn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.xst" -ofn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7k160t-fbg676-1 Top.ngc Top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.xst" -ofn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.syr" 
+xst -intstyle ise -ifn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.xst" -ofn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7k160t-fbg676-1 Top.ngc Top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.xst" -ofn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7k160t-fbg676-1 Top.ngc Top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 
+xst -intstyle ise -ifn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.xst" -ofn "C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/Top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Top.ucf -p xc7k160t-fbg676-1 Top.ngc Top.ngd  
+map -intstyle ise -p xc7k160t-fbg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_map.ncd Top.ngd Top.pcf 
+par -w -intstyle ise -ol high -mt off Top_map.ncd Top.ncd Top.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Top.ucf 
+bitgen -intstyle ise -f Top.ut Top.ncd 

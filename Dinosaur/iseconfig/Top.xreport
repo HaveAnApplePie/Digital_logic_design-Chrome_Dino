@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-12-30T15:32:47</DateModified>
+  <DateModified>2020-01-06T09:40:14</DateModified>
   <ModuleName>Top</ModuleName>
   <SummaryTimeStamp>2019-12-30T15:18:09</SummaryTimeStamp>
-  <SavedFilePath>F:/ZJU/2019aut-win/LCDF/Dinosaur/iseconfig/Top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>F:/ZJU/2019aut-win/LCDF/Dinosaur\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur/iseconfig/Top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Dell/Desktop/Digital_logic_design-Chrome_Dino/Dinosaur\</ImplementationReportsDirectory>
   <DateInitialized>2019-12-25T15:55:22</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

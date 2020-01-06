@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Dec 30 16:36:14 2019
+// Written by: Map P.20131013 on Mon Jan 06 10:52:36 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -17,6 +17,7 @@ COMP "R<2>" LOCATE = SITE "R21" LEVEL 1;
 COMP "R<3>" LOCATE = SITE "P21" LEVEL 1;
 COMP "SEGLED_CLK" LOCATE = SITE "M24" LEVEL 1;
 COMP "SEGLED_CLR" LOCATE = SITE "M20" LEVEL 1;
+COMP "ps2_clk" LOCATE = SITE "N18" LEVEL 1;
 COMP "BTN_Y<3>" LOCATE = SITE "W14" LEVEL 1;
 COMP "BTN_Y<2>" LOCATE = SITE "V14" LEVEL 1;
 COMP "BTN_Y<1>" LOCATE = SITE "V19" LEVEL 1;
@@ -43,6 +44,7 @@ COMP "SW<2>" LOCATE = SITE "AA13" LEVEL 1;
 COMP "SW<3>" LOCATE = SITE "AA12" LEVEL 1;
 COMP "SW<4>" LOCATE = SITE "Y13" LEVEL 1;
 COMP "SW<5>" LOCATE = SITE "Y12" LEVEL 1;
+COMP "ps2_data" LOCATE = SITE "M19" LEVEL 1;
 COMP "SW<6>" LOCATE = SITE "AD11" LEVEL 1;
 COMP "SW<7>" LOCATE = SITE "AD10" LEVEL 1;
 COMP "SW<8>" LOCATE = SITE "AE10" LEVEL 1;

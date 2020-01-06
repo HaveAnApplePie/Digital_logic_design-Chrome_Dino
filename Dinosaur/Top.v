@@ -30,7 +30,9 @@ module Top(
 	output SEGLED_CLK,
 	output SEGLED_CLR,
 	output SEGLED_DO,
-	output SEGLED_PEN
+	output SEGLED_PEN,
+	input ps2_clk,
+	input ps2_data
     );
 	 
 	wire[31:0] clk_div;
@@ -48,6 +50,10 @@ module Top(
 	wire[8:0] row_addr;
 	vgac vga(.vga_clk(clk_div[1]), .clrn(SW_OK[0]), .d_in(vga_data), .row_addr(row_addr), .col_addr(col_addr), .r(R), .g(G), .b(B), .hs(HS), .vs(VS));	//VGAÇý¶¯
 
+	wire[9:0] ps2_dataout;
+	wire ps2_ready;
+	PS2_keyboard ps2(.clk(clk), .rst(SW_OK[15]), .ps2_clk(ps2_clk), 
+							.ps2_data(ps2_data), .data_out(ps2_dataout), .ready(ps2_ready));
 	
 	reg[18:0] Dino0;	//¿ÖÁúÍ¼ÏñipºËµØÖ·
 	//wire[11:0] spob;	//¿ÖÁúÍ¼ÏñipºËÊä³ö£¬4*3 rgb
@@ -62,6 +68,14 @@ module Top(
 	DinoL DinoL(.addra(Dino0), .douta(spobDinoL), .clka(clk_div[1]));
 	wire[11:0] spobDinoR;	//ÓÒÍÈÌ§ÆðÍ¼Ïñ
 	DinoR DinoR(.addra(Dino0), .douta(spobDinoR), .clka(clk_div[1]));
+	
+	wire[11:0] Obstacle_out;	//ÕÏ°­ÎïÍ¼ÏñipºËÊä³ö£¬4*3 rgb
+	Obstacle_layer OLAYER(
+		.clk_div(clk_div), 
+		.col_addr(col_addr), 
+		.row_addr(row_addr), 
+		.dout(Obstacle_out)
+		);
 	
 			
 	wire [31:0] segData;
@@ -93,14 +107,17 @@ module Top(
 			case(keyCode)
 				5'h10: if(jumpTime >= 8'd64)begin isJump <= 1'b1; jumpTime <= 8'd0; end	//¿ªÊ¼ÌøÔ¾£¬½«¼ÆÊýÆ÷ÖÃÁã
 				5'h12: if(jumpTime0 >= 8'd64)begin isJump0 <= 1'b1; jumpTime0 <= 8'd0; end
-				//5'hc: Dino0_X <= Dino0_X - 10'd20;
-				//5'he: Dino0_X <= Dino0_X + 10'd20;
-				//5'h9: Dino0_Y <= Dino0_Y - 9'd20;
-				//5'h11: Dino0_Y <= Dino0_Y + 9'd20;
 				default:;
 			endcase
 		end
 		
+		
+		if(ps2_dataout[7:0]==8'h12 && ps2_ready)//×óshift
+			if(jumpTime >= 8'd64)begin isJump <= 1'b1; jumpTime <= 8'd0; end
+		if(ps2_dataout[7:0]==8'h59 && ps2_ready)//ÓÒshiift
+			if(jumpTime0 >= 8'd64)begin isJump0 <= 1'b1; jumpTime0 <= 8'd0; end
+			
+			
 		if(clk_div[23] && DinoLeg)begin
 			DinoLeg <= 1'b0;
 			DinoLeg0 <= 1'b1;
@@ -128,7 +145,7 @@ module Top(
 			vga_data <= 12'h000;
 		end
 		else begin
-			vga_data <= 12'hfff;	//·ñÔòäÖÈ¾°×É«
+			vga_data <= Obstacle_out;	//·ñÔòäÖÈ¾ÕÏ°­Îï
 		end
 		
 		//×¢£ºÉÏÉý/ÏÂ½µ¾ù²ÉÓÃ·ÖÈý¶ÎËÙ¶È½øÐÐ£¬Ä£ÄâÖØÁ¦

@@ -55,7 +55,7 @@ module Top(
 	PS2_keyboard ps2(.clk(clk), .rst(SW_OK[15]), .ps2_clk(ps2_clk), 
 							.ps2_data(ps2_data), .data_out(ps2_dataout), .ready(ps2_ready));
 	
-	reg[18:0] Dino0;	//恐龙图像ip核地址
+	reg[18:0] Dino0;	//恐 龙图像ip核地址
 	//wire[11:0] spob;	//恐龙图像ip核输出，4*3 rgb
 	reg[9:0] Dino0_X, Dino1_X;	//恐龙位置X坐标（左上角）
 	initial Dino0_X <= 10'd30;
@@ -73,14 +73,28 @@ module Top(
 	Obstacle_layer OLAYER(
 		.clk_div(clk_div), 
 		.col_addr(col_addr), 
-		.row_addr(row_addr), 
+		.row_addr(row_addr - 8'd150), 
 		.dout(Obstacle_out)
 		);
+		
+	wire[11:0] Obstacle_out1;	//障碍物图像ip核输出，4*3 rgb
+	Obstacle_layer OLAYER1(
+		.clk_div(clk_div), 
+		.col_addr(col_addr), 
+		.row_addr(row_addr + 8'd90), 
+		.dout(Obstacle_out1)
+		);
+	
+	reg[1:0] crash;
+	initial crash = 2'b0;
+	//collision_detection co0(.rst(1'b0), .dino(spobDonoL), .obstacle(Obstacle_out), .rdn(1'b0), .col_addr(col_addr), .row_addr(row_addr), .crash(crash0));
+	//collision_detection co1(.rst(1'b0), .dino(spobDinoL), .obstacle(Obstacle_out1), .rdn(1'b0), .col_addr(col_addr), .row_addr(row_addr), .crash(crash1));
+
 	
 			
 	wire [31:0] segData;
 	wire [3:0] sout;
-	ScoreCounter Score0(.clk_div(clk_div), .data(segData));
+	ScoreCounter Score0(.rst(SW_OK[15]), .clk_div(clk_div), .data(segData), .crash(crash));
 	Seg7Device segDevice(.clkIO(clk_div[3]), .clkScan(clk_div[15:14]), .clkBlink(clk_div[25]),
 									.data(segData), .point(8'h0), .LES(8'h0),
 									.sout(sout));
@@ -100,7 +114,10 @@ module Top(
 	initial DinoLeg <= 1'b0;
 	initial DinoLeg0 <= 1'b1;
 	always@(posedge clk)begin
-	
+		
+		if(SW_OK[15])begin
+			crash <= 2'b0;
+		end
 	
 		wasReady <= keyReady;
 		if(!wasReady && keyReady)begin
@@ -111,12 +128,12 @@ module Top(
 			endcase
 		end
 		
-		
 		if(ps2_dataout[7:0]==8'h12 && ps2_ready)//左shift
 			if(jumpTime >= 8'd64)begin isJump <= 1'b1; jumpTime <= 8'd0; end
 		if(ps2_dataout[7:0]==8'h59 && ps2_ready)//右shiift
 			if(jumpTime0 >= 8'd64)begin isJump0 <= 1'b1; jumpTime0 <= 8'd0; end
-			
+		if(ps2_dataout[7:0]==8'h29 && ps2_ready)//重新开始
+			begin crash <= 2'b0; end
 			
 		if(clk_div[23] && DinoLeg)begin
 			DinoLeg <= 1'b0;
@@ -127,25 +144,38 @@ module Top(
 			DinoLeg0 <= 1'b0;
 		end
 		
-		if(col_addr >= Dino0_X && col_addr <= Dino0_X + 63 && row_addr >= Dino0_Y && row_addr <= Dino0_Y + 63)begin //当扫描到恐龙应该出现的位置时
+		if(col_addr >= Dino0_X && col_addr <= Dino0_X + 63 && row_addr >= Dino0_Y && row_addr <= Dino0_Y + 63 && !crash[0])begin //当扫描到恐龙应该出现的位置时
 			Dino0 <= (col_addr-Dino0_X)*64 + (row_addr-Dino0_Y);	//将需要读取的内存地址送入ip核
+			if(Obstacle_out1 != 12'hfff)
+				crash[0] <= 1;
+			//else
+			//	crash[0] <= 0;
 			if(DinoLeg)
-				vga_data <= spobDinoL[11:0];	//输出传入VGA
+				vga_data <= spobDinoL & Obstacle_out1;	//输出传入VGA
 			else
-				vga_data <= spobDinoR[11:0];
+				vga_data <= spobDinoR & Obstacle_out1;
 		end
-		else if(col_addr >= Dino1_X && col_addr <= Dino1_X + 63 && row_addr >= Dino1_Y && row_addr <= Dino1_Y + 63)begin
+		else if(col_addr >= Dino1_X && col_addr <= Dino1_X + 63 && row_addr >= Dino1_Y && row_addr <= Dino1_Y + 63 && !crash[1])begin
 			Dino0 <= (col_addr-Dino1_X)*64 + (row_addr-Dino1_Y);	//将需要读取的内存地址送入ip核
+			if(Obstacle_out != 12'hfff)
+				crash[1] <= 1;
+			//else
+			//	crash[1] <= 0;
 			if(DinoLeg0)
-				vga_data <= spobDinoL[11:0];	//输出传入VGA
+				vga_data <= spobDinoL & Obstacle_out;	//输出传入VGA
 			else
-				vga_data <= spobDinoR[11:0];
+				vga_data <= spobDinoR & Obstacle_out;
 		end
-		else if(row_addr == 9'd240)begin
+		else if(row_addr == 9'd211 || row_addr == 9'd451)begin
 			vga_data <= 12'h000;
 		end
 		else begin
-			vga_data <= Obstacle_out;	//否则渲染障碍物
+			if(crash[0] && !crash[1]) vga_data <= Obstacle_out;
+			else if(!crash[0] && crash[1]) vga_data <= Obstacle_out1;
+			else if(!crash[0] && !crash[1])
+				vga_data <= Obstacle_out & Obstacle_out1;	//否则渲染障碍物
+			else
+				vga_data <= 12'hfff;
 		end
 		
 		//注：上升/下降均采用分三段速度进行，模拟重力

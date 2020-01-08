@@ -1,0 +1,13 @@
+run
+-ifmt VHDL
+-ent Cactus_b_ip_exdes
+-p xc7k160t-fbg676-1
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn Cactus_b_ip_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain

@@ -19,18 +19,22 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ScoreCounter(
+	input rst,
+	input[1:0] crash,
 	input[31:0] clk_div,
 	output reg[31:0] data
     );
 	 
 	initial data <= 32'h0000_0000;
 	
-	always@(posedge clk_div[24])begin
+	always@(posedge clk_div[23])begin
+		if(rst) data <= 32'h0000_0000;
+		else begin
 		if(data[3:0] == 4'h9)begin
 			data[3:0] <= 4'h0;
 			data[7:4] <= data[7:4] + 1'd1;
 		end
-		else
+		else if(!crash[0])
 			data[3:0] <= data[3:0] + 1'd1;
 		if(data[7:4] == 4'h9 && data[3:0] == 4'h9)begin
 			data[7:4] <= 4'h0;
@@ -45,7 +49,7 @@ module ScoreCounter(
 			data[19:16] <= 4'h0;
 			data[23:20] <= data[23:20] + 1'd1;
 		end
-		else
+		else if(!crash[1])
 			data[19:16] <= data[19:16] + 1'd1;
 		if(data[23:20] == 4'h9 && data[19:16] == 4'h9)begin
 			data[23:20] <= 4'h0;
@@ -54,6 +58,7 @@ module ScoreCounter(
 		if(data[27:24] == 4'h9 && data[23:20] == 4'h9 && data[19:16] == 4'h9)begin
 			data[27:24] <= 4'h0;
 			data[31:28] <= data[31:28] + 1'd1;
+		end
 		end
 	end
 	
